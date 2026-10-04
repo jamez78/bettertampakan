@@ -147,7 +147,7 @@ export const footerNavigation = {
       title: 'Resources',
       links: [
         {
-          label: `${config.lgu.name} Gov.ph`,
+          label: `${config.lgu.name} LGU Facebook page`,
           href: config.lgu.officialWebsite,
           target: '_blank',
         },

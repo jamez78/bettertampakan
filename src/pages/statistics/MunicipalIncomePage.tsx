@@ -11,7 +11,46 @@ import FinancialPieChart from '@/pages/transparency/components/FinancialPieChart
 
 import { formatPesoAdaptive } from '@/lib/format';
 
-import ariData from '@/data/statistics/ari.json';
+import { EmptyState } from '@/components/ui/EmptyState';
+
+import rawAriData from '@/data/statistics/ari.json';
+
+interface AriRecord {
+  period: string;
+  locally_sourced_revenue: {
+    tax_revenue: {
+      real_property_tax_general_fund: number;
+      tax_on_business: number;
+      other_taxes: number;
+      total_tax_revenue: number;
+    };
+    non_tax_revenue: {
+      regulatory_fees: number;
+      service_user_charges: number;
+      receipts_from_economic_enterprises: number;
+      total_non_tax_revenue: number;
+    };
+    total_locally_sourced_revenue: number;
+  };
+  other_income_sources: {
+    interest_income: number;
+    national_tax_allotment: number;
+  };
+  other_shares_from_national_tax_collection: {
+    [key: string]: number;
+    total_other_shares: number;
+  };
+  summary_indicators: {
+    annual_regular_income: number;
+    dependency_rates: {
+      lsr_dependency: string;
+      nta_dependency: string;
+      other_shares_from_national_tax_dependency: string;
+    };
+  };
+}
+
+const ariData = rawAriData as AriRecord[];
 
 const COLORS = {
   national: '#0066eb',
@@ -21,6 +60,20 @@ const COLORS = {
 };
 
 export default function MunicipalIncomePage() {
+  if (ariData.length === 0) {
+    return (
+      <EmptyState
+        title='Income data not yet available'
+        message='BLGF income figures for this municipality have not been added to the portal yet.'
+        actionHref='/statistics'
+        actionLabel='Back to Statistics'
+      />
+    );
+  }
+  return <MunicipalIncomeContent />;
+}
+
+function MunicipalIncomeContent() {
   const data = ariData[0];
 
   const drillDownIncomeData = useMemo(

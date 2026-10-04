@@ -23,7 +23,21 @@ import { PageHero } from '@/components/layout/PageLayouts';
 
 import { cn } from '@/lib/utils';
 
-import cmciData from '@/data/statistics/cmci.json';
+import { EmptyState } from '@/components/ui/EmptyState';
+
+import rawCmciData from '@/data/statistics/cmci.json';
+
+interface CmciData {
+  meta: { source: string; years: number[] };
+  overall_score: number[];
+  pillars: {
+    name: string;
+    scores: (number | null)[];
+    indicators: { name: string; values: (number | null)[] }[];
+  }[];
+}
+
+const cmciData = rawCmciData as CmciData;
 
 const PILLAR_COLORS: Record<string, string> = {
   Overall: '#0066eb',
@@ -42,6 +56,20 @@ interface TrendPoint {
 }
 
 export default function CompetitivenessPage() {
+  if (cmciData.pillars.length === 0) {
+    return (
+      <EmptyState
+        title='Competitiveness data not yet available'
+        message='CMCI scores for this municipality have not been added to the portal yet.'
+        actionHref='/statistics'
+        actionLabel='Back to Statistics'
+      />
+    );
+  }
+  return <CompetitivenessContent />;
+}
+
+function CompetitivenessContent() {
   const [activeTab, setActiveTab] = useState<'trends' | 'pillars'>('trends');
   const [selectedPillar, setSelectedPillar] = useState(
     cmciData.pillars[0].name

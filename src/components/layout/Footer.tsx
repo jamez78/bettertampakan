@@ -123,8 +123,13 @@ export const Footer: FC = () => {
           </div>
         </div>
 
+        {/* Independence notice */}
+        <p className='mt-12 text-sm text-center text-kapwa-text-support'>
+          {t('footer.disclaimer')}
+        </p>
+
         {/* Bottom Bar */}
-        <div className='flex flex-col gap-6 justify-between items-center pt-8 mt-16 border-t border-kapwa-border-strong md:flex-row'>
+        <div className='flex flex-col gap-6 justify-between items-center pt-8 mt-8 border-t border-kapwa-border-strong md:flex-row'>
           <p className='text-[10px] font-bold tracking-widest text-kapwa-text-disabled uppercase'>
             {t('footer.copyright')}
           </p>

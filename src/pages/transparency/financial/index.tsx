@@ -17,6 +17,7 @@ import {
 } from '@/components/navigation/Breadcrumb';
 // UI Components
 import { Badge } from '@/components/ui/Badge';
+import { EmptyState } from '@/components/ui/EmptyState';
 
 import FinancialPieChart, {
   ChartDataPoint,
@@ -28,7 +29,23 @@ import { useFinancialData } from '@/hooks/useFinancialData';
 
 import { formatLabel } from '@/lib/budgetUtils';
 
+import budgetData from '@/data/transparency/budgetData';
+
 export default function FinancialPage() {
+  if (budgetData.length === 0) {
+    return (
+      <EmptyState
+        title='Financial reports not yet available'
+        message='Statements of receipts and expenditures for this municipality have not been added to the portal yet.'
+        actionHref='/transparency'
+        actionLabel='Back to Transparency'
+      />
+    );
+  }
+  return <FinancialContent />;
+}
+
+function FinancialContent() {
   const {
     years,
     selectedYear,

@@ -73,9 +73,11 @@ const GovernmentSection: FC = () => {
           <Badge variant='primary' className='px-4 py-2 text-sm'>
             {barangayCount} Barangays
           </Badge>
-          <Badge variant='secondary' className='px-4 py-2 text-sm'>
-            {departmentCount} Departments
-          </Badge>
+          {departmentCount > 0 && (
+            <Badge variant='secondary' className='px-4 py-2 text-sm'>
+              {departmentCount} Departments
+            </Badge>
+          )}
           <Badge variant='slate' className='px-4 py-2 text-sm'>
             Elected Officials
           </Badge>

@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Maligayang Pagdating sa BetterLB",
-    "subtitle": "Ang volunteer-run portal ng Munisipalidad ng Los Baños. Maghanap ng impormasyon, i-access ang mga serbisyo ng pamahalaan, manatiling updated sa pinakabagong balita tungkol sa Los Baños.",
+    "title": "Maligayang Pagdating sa BetterTampakan",
+    "subtitle": "Ang volunteer-run na community portal para sa Munisipalidad ng Tampakan, South Cotabato. Maghanap ng impormasyon tungkol sa lokal na pamahalaan, mga serbisyo publiko at pampublikong datos ng Tampakan.",
     "quickAccess": "Mabilisang Puntahan",
     "nationalId": "National ID",
     "birthCertificate": "Sertipiko ng Kapanganakan",
@@ -37,7 +37,8 @@
     "title": "Pinakabagong Balita at Updates"
   },
   "footer": {
-    "copyright": "2025 BetterLB.org - Lahat ng nilalaman ay public domain maliban kung iba ang nakasaad."
+    "copyright": "2026 BetterTampakan - Lahat ng nilalaman ay public domain maliban kung iba ang nakasaad.",
+    "disclaimer": "Independent community portal. Not an official website of the Municipal Government of Tampakan."
   },
   "navbar": {
     "home": "Home",
@@ -91,8 +92,8 @@
     "registerNow": "Magparehistro Ngayon"
   },
   "government": {
-    "title": "Lokal na Pamahalaan ng Munisipalidad ng Los Baños",
-    "description": "Alamin ang mga pangunahing opisina, konseho, at lokal na yunit na bumubuo sa Munisipal na Pamahalaan ng Los Baños.",
+    "title": "Lokal na Pamahalaan ng Munisipalidad ng Tampakan",
+    "description": "Alamin ang mga pangunahing opisina, konseho, at lokal na yunit na bumubuo sa Munisipal na Pamahalaan ng Tampakan.",
     "executiveTitle": "Sangay na Tagapagpaganap",
     "executiveDescription": "Pinangungunahan ng Alkalde, responsable sa pagpapatupad ng mga patakaran, programa, at ordinansa ng munisipyo.",
     "legislativeTitle": "Sangay na Tagapagbatas",

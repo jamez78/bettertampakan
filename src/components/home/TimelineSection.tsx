@@ -17,8 +17,23 @@ import { Card, CardContent } from '@/components/ui/Card';
 
 import { config } from '@/lib/lguConfig';
 
-import highlightsData from '@/data/about/highlights.json';
-import historyData from '@/data/about/history.json';
+import rawHighlightsData from '@/data/about/highlights.json';
+import rawHistoryData from '@/data/about/history.json';
+
+interface HistoryEvent {
+  year: string;
+  title: string;
+  description: string;
+}
+
+interface Highlight {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+const historyData = rawHistoryData as HistoryEvent[];
+const highlightsData = rawHighlightsData as Highlight[];
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Waves,
@@ -33,6 +48,9 @@ const ICON_MAP: Record<string, LucideIcon> = {
 export default function TimelineSection() {
   const [showAll, setShowAll] = useState(false);
   const COLLAPSE_LIMIT = 5;
+
+  // Nothing to show until local history has been written for this LGU
+  if (historyData.length === 0 && highlightsData.length === 0) return null;
 
   const visibleHistory = showAll
     ? historyData

@@ -49,9 +49,9 @@ function getCorsHeaders(origin: string | null): Record<string, string> {
 
 // CONFIGURATION - Easy to change for other municipalities
 const DEFAULT_CITY: CityCoordinates = {
-  name: 'Los Baños',
-  lat: 14.1763,
-  lon: 121.2219,
+  name: 'Tampakan',
+  lat: 6.4439,
+  lon: 124.9266,
 };
 
 // Optional: Add more cities if needed

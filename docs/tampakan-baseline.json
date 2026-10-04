@@ -1,0 +1,1022 @@
+{
+  "_about": {
+    "what": "Baseline public data for a BetterTampakan portal, with a source and a verification status for every field.",
+    "compiled": "2026-10-04",
+    "status_values": {
+      "confirmed": "Backed by a primary source or by two independent sources.",
+      "needs_confirmation": "Secondary source only, or sources disagree. Check before it goes public.",
+      "placeholder": "Sensible default that you must replace."
+    },
+    "template": "https://github.com/BetterLosBanos/betterlb"
+  },
+  "sources": {
+    "psa_popcen": {
+      "title": "PSA South Cotabato press release 2025PR-R1263-054 (released 5 Aug 2025)",
+      "url": "https://rsso12.psa.gov.ph/system/files/publication/2025PR-R1263-054-Tampakan%20Population%20Grows%20to%2042,304%20in%20Latest%20National%20Count.pdf",
+      "type": "primary"
+    },
+    "psa_psgc": {
+      "title": "PSA Philippine Standard Geographic Code, Province of South Cotabato",
+      "url": "https://psa.gov.ph/classification/psgc/citimuni/1206300000",
+      "type": "primary"
+    },
+    "dti_cmci": {
+      "title": "DTI Cities and Municipalities Competitiveness Index, Tampakan profile",
+      "url": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Tampakan",
+      "type": "primary"
+    },
+    "lgu_fb": {
+      "title": "Municipal Government of Tampakan, official Facebook page (Municipal Information Office)",
+      "url": "https://www.facebook.com/p/Municipal-Government-of-Tampakan-100069061335217/",
+      "type": "primary"
+    },
+    "rappler_2025": {
+      "title": "Rappler, Tampakan 2025 election results (partial, unofficial; 97.37% of precincts, 15 May 2025)",
+      "url": "https://ph.rappler.com/elections/2025/local-race/south-cotabato/tampakan",
+      "type": "news"
+    },
+    "mindanews_2025": {
+      "title": "MindaNews, 18 Aug 2025: Tampakan mayor re-elected LMP-South Cotabato president",
+      "url": "https://mindanews.com/top-stories/2025/08/mayor-of-mineral-rich-tampakan-town-re-elected-as-lmp-southcot-president/",
+      "type": "news"
+    },
+    "bombo_2025": {
+      "title": "Bombo Radyo Koronadal, 7 Oct 2025 (names the sitting mayor and vice mayor)",
+      "url": "https://koronadal.bomboradyo.com/sk-chairman-sa-tampakan-umamin-ng-kasalanan-at-pinatawan-ng-18-buwang-suspensyon/",
+      "type": "news"
+    },
+    "dilg_scot": {
+      "title": "DILG South Cotabato, municipality officials page (read 4 Oct 2026; still shows the 2022 to 2025 term)",
+      "url": "https://southcotabato.region12.dilg.gov.ph/municipality/",
+      "type": "primary, outdated"
+    },
+    "bettergov_dir": {
+      "title": "BetterGov.ph government directory dataset, as committed in the BetterKoronadal repo (refreshed 3 Oct 2026)",
+      "url": "https://github.com/janineooak/betterkoronadal/blob/main/src/data/generated/lgu-region-xii.json",
+      "type": "secondary"
+    },
+    "wikipedia": {
+      "title": "Wikipedia, Tampakan (secondary; its own officials tables disagree with its infobox)",
+      "url": "https://en.wikipedia.org/wiki/Tampakan",
+      "type": "secondary"
+    }
+  },
+  "profile": {
+    "name": {
+      "value": "Tampakan",
+      "sources": [
+        "psa_psgc"
+      ],
+      "status": "confirmed"
+    },
+    "full_name": {
+      "value": "Municipality of Tampakan",
+      "sources": [
+        "psa_psgc"
+      ],
+      "status": "confirmed"
+    },
+    "province": {
+      "value": "South Cotabato",
+      "sources": [
+        "psa_psgc"
+      ],
+      "status": "confirmed"
+    },
+    "region": {
+      "value": "Region XII (SOCCSKSARGEN)",
+      "sources": [
+        "psa_psgc"
+      ],
+      "status": "confirmed"
+    },
+    "psgc_code": {
+      "value": "1206314000",
+      "sources": [
+        "psa_psgc"
+      ],
+      "status": "confirmed"
+    },
+    "income_class": {
+      "value": "1st",
+      "sources": [
+        "psa_psgc"
+      ],
+      "status": "confirmed",
+      "note": "PSA lists 1st class. DTI and Rappler still show the older 2nd class label."
+    },
+    "population_2024": {
+      "value": 42304,
+      "sources": [
+        "psa_popcen",
+        "psa_psgc"
+      ],
+      "status": "confirmed"
+    },
+    "barangay_count": {
+      "value": 14,
+      "sources": [
+        "psa_popcen"
+      ],
+      "status": "confirmed"
+    },
+    "registered_voters_2025": {
+      "value": 30461,
+      "sources": [
+        "rappler_2025"
+      ],
+      "status": "confirmed"
+    },
+    "legislative_district": {
+      "value": "South Cotabato 1st District",
+      "sources": [
+        "wikipedia"
+      ],
+      "status": "needs_confirmation"
+    },
+    "land_area_km2": {
+      "value": 390.0,
+      "sources": [
+        "wikipedia"
+      ],
+      "status": "needs_confirmation",
+      "note": "Confirm against the LGU's CLUP or DENR-LMB figure."
+    },
+    "founded": {
+      "value": "1970-06-21",
+      "sources": [
+        "wikipedia"
+      ],
+      "status": "needs_confirmation",
+      "note": "Wikipedia gives 21 June 1970; Wikidata shows 1966. Confirm with the LGU."
+    },
+    "zip_code": {
+      "value": "9507",
+      "sources": [
+        "wikipedia"
+      ],
+      "status": "needs_confirmation"
+    },
+    "coordinates": {
+      "value": {
+        "lat": 6.4439,
+        "lon": 124.9266
+      },
+      "sources": [
+        "wikipedia"
+      ],
+      "status": "needs_confirmation",
+      "note": "Town-centre point; fine for the weather widget and map."
+    },
+    "motto": {
+      "value": "Mabulawanong Tampakan",
+      "sources": [
+        "wikipedia"
+      ],
+      "status": "needs_confirmation"
+    },
+    "electricity_provider": {
+      "value": "South Cotabato I Electric Cooperative (SOCOTECO I)",
+      "sources": [
+        "wikipedia"
+      ],
+      "status": "needs_confirmation"
+    }
+  },
+  "contacts": {
+    "municipal_hall_address": {
+      "value": "Poblacion, Tampakan, South Cotabato",
+      "sources": [
+        "dti_cmci"
+      ],
+      "status": "confirmed"
+    },
+    "telephone": {
+      "value": "(083) 227-1001",
+      "sources": [
+        "dti_cmci",
+        "lgu_fb"
+      ],
+      "status": "confirmed"
+    },
+    "email": {
+      "value": "lgutampakan2019@gmail.com",
+      "sources": [
+        "dti_cmci",
+        "lgu_fb"
+      ],
+      "status": "confirmed"
+    },
+    "facebook_page": {
+      "value": "https://www.facebook.com/p/Municipal-Government-of-Tampakan-100069061335217/",
+      "sources": [
+        "lgu_fb",
+        "dti_cmci"
+      ],
+      "status": "confirmed",
+      "note": "DTI lists this page as the LGU's website link."
+    },
+    "official_website": {
+      "value": null,
+      "sources": [
+        "wikipedia"
+      ],
+      "status": "needs_confirmation",
+      "note": "Wikipedia and Wikidata list tampakanscot.gov.ph but it could not be confirmed as live. Treat the Facebook page as the official channel."
+    }
+  },
+  "officials": {
+    "executive": [
+      {
+        "role": "Mayor",
+        "name": {
+          "value": "Leonard T. Escobillo",
+          "sources": [
+            "mindanews_2025",
+            "bombo_2025",
+            "rappler_2025",
+            "dti_cmci"
+          ],
+          "status": "confirmed",
+          "note": "Third and last term per MindaNews. Ballot name 'Junjun Escobillo'. First name appears as Leonard (DTI, MindaNews) and Leonardo (BetterGov directory, DILG 2022 list as 'Leonardo Jr'); his father, former mayor Leonardo V. Escobillo, is a different person. Seated after the May 2025 election. Confirm spelling and middle initial with the LGU before launch."
+        },
+        "term": "2025-06-30 to 2028-06-30"
+      },
+      {
+        "role": "Vice Mayor",
+        "name": {
+          "value": "Ric A. Magbanua",
+          "sources": [
+            "bombo_2025",
+            "rappler_2025",
+            "wikipedia"
+          ],
+          "status": "confirmed",
+          "note": "Bombo Radyo (7 Oct 2025) names 'Vice Mayor Ric Magbanua'; Rappler shows 'Toton Magbanua' winning the seat in May 2025. The DILG South Cotabato page and the BetterGov.ph directory list Anadel T. Magbanua, but both show the 2022 to 2025 term: their council includes Jabib Bides and Raymond Seloterio, who were not candidates in 2025, and omits 2025 winners Michael Escobillo and Catherine Tabaco. The two Magbanuas swapped seats in 2025: Ric moved from councilor to vice mayor, Anadel from vice mayor to councilor. Middle initial is from Wikipedia only."
+        },
+        "term": "2025-06-30 to 2028-06-30"
+      }
+    ],
+    "sangguniang_bayan_elected": [
+      {
+        "role": "Municipal Councilor",
+        "name": {
+          "value": "Michael T. Escobillo",
+          "sources": [
+            "rappler_2025",
+            "wikipedia"
+          ],
+          "status": "needs_confirmation",
+          "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia. Wikipedia spells it both 'Michael' and 'Micheal'."
+        },
+        "ballot_name": "Mike Escobillo",
+        "votes_partial_unofficial": 14448
+      },
+      {
+        "role": "Municipal Councilor",
+        "name": {
+          "value": "John Mark C. Baldon",
+          "sources": [
+            "rappler_2025",
+            "wikipedia"
+          ],
+          "status": "needs_confirmation",
+          "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
+        },
+        "ballot_name": "Bobsi Baldon",
+        "votes_partial_unofficial": 13663
+      },
+      {
+        "role": "Municipal Councilor",
+        "name": {
+          "value": "Erve T. Tutor",
+          "sources": [
+            "rappler_2025",
+            "wikipedia"
+          ],
+          "status": "needs_confirmation",
+          "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
+        },
+        "ballot_name": "Erve Tutor",
+        "votes_partial_unofficial": 13355
+      },
+      {
+        "role": "Municipal Councilor",
+        "name": {
+          "value": "Roy M. Cagas",
+          "sources": [
+            "rappler_2025",
+            "wikipedia"
+          ],
+          "status": "needs_confirmation",
+          "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
+        },
+        "ballot_name": "Roy Cagas",
+        "votes_partial_unofficial": 13186
+      },
+      {
+        "role": "Municipal Councilor",
+        "name": {
+          "value": "Celso F. Doc",
+          "sources": [
+            "rappler_2025",
+            "wikipedia"
+          ],
+          "status": "needs_confirmation",
+          "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
+        },
+        "ballot_name": "Celso Doc",
+        "votes_partial_unofficial": 12781
+      },
+      {
+        "role": "Municipal Councilor",
+        "name": {
+          "value": "Alexey C. Cariaga",
+          "sources": [
+            "rappler_2025",
+            "wikipedia"
+          ],
+          "status": "needs_confirmation",
+          "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
+        },
+        "ballot_name": "Totoy Cariaga",
+        "votes_partial_unofficial": 12772
+      },
+      {
+        "role": "Municipal Councilor",
+        "name": {
+          "value": "Anadel T. Magbanua",
+          "sources": [
+            "rappler_2025",
+            "wikipedia"
+          ],
+          "status": "needs_confirmation",
+          "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia. Vice mayor in the 2022 to 2025 term, which is why the DILG page and BetterGov directory still list him in that seat."
+        },
+        "ballot_name": "Dodong Magbanua",
+        "votes_partial_unofficial": 12551
+      },
+      {
+        "role": "Municipal Councilor",
+        "name": {
+          "value": "Catherine T. Tabaco",
+          "sources": [
+            "rappler_2025",
+            "wikipedia"
+          ],
+          "status": "needs_confirmation",
+          "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
+        },
+        "ballot_name": "Catherine Tabaco",
+        "votes_partial_unofficial": 12387
+      }
+    ],
+    "sangguniang_bayan_ex_officio": [
+      {
+        "role": "Liga ng mga Barangay Representative",
+        "name": {
+          "value": "Sotero N. Castillanes",
+          "sources": [
+            "wikipedia"
+          ],
+          "status": "needs_confirmation",
+          "note": "Per Wikipedia he is ABC Vice President (Punong Barangay of Palo) sitting in place of ABC President Neil Ryan T. Escobillo, who serves at the provincial board."
+        }
+      },
+      {
+        "role": "Indigenous Peoples Mandatory Representative",
+        "name": {
+          "value": "Amay Collado",
+          "sources": [
+            "wikipedia"
+          ],
+          "status": "needs_confirmation",
+          "note": "He ran for councilor in May 2025 and placed 9th, so the seat may have changed hands. Confirm."
+        }
+      },
+      {
+        "role": "SK Federation President",
+        "name": {
+          "value": "Christian Dave Ho",
+          "sources": [
+            "wikipedia"
+          ],
+          "status": "needs_confirmation",
+          "note": "SK Chairperson of Danlag per Wikipedia."
+        }
+      }
+    ]
+  },
+  "barangays": [
+    {
+      "name": "Poblacion",
+      "population_2024": {
+        "value": 7757,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 18.3,
+      "punong_barangay": {
+        "value": "Jose Nilo G. Vargas",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "Ian Clark Cornelio",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      }
+    },
+    {
+      "name": "Kipalbig",
+      "population_2024": {
+        "value": 6204,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 14.7,
+      "punong_barangay": {
+        "value": "Rolando D. Malabuyoc",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "Jester Cloyd Oñez",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      }
+    },
+    {
+      "name": "Maltana",
+      "population_2024": {
+        "value": 4044,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 9.6,
+      "punong_barangay": {
+        "value": "Eric Entong",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "John Rupert Suba",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      }
+    },
+    {
+      "name": "Santa Cruz",
+      "population_2024": {
+        "value": 3147,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 7.4,
+      "punong_barangay": {
+        "value": "Wilfredo M. Epe",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": null,
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "No SK Chairperson listed in any source found."
+      }
+    },
+    {
+      "name": "Lambayong",
+      "population_2024": {
+        "value": 2990,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 7.1,
+      "punong_barangay": {
+        "value": "Glenn F. Tabano",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "Vincent Paul Bunga",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      }
+    },
+    {
+      "name": "Lampitak",
+      "population_2024": {
+        "value": 2911,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 6.9,
+      "punong_barangay": {
+        "value": "Marinillo M. Ngalon",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "Vanessa Garcia",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      }
+    },
+    {
+      "name": "Danlag",
+      "population_2024": {
+        "value": 2774,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 6.6,
+      "punong_barangay": {
+        "value": "Judith J. Magbanua",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "Christian Dave Ho",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      }
+    },
+    {
+      "name": "Liberty",
+      "population_2024": {
+        "value": 2463,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 5.8,
+      "punong_barangay": {
+        "value": "Nolin S. Jalagat",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "Jorimar Cabañas",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      }
+    },
+    {
+      "name": "Tablu",
+      "population_2024": {
+        "value": 2374,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 5.6,
+      "punong_barangay": {
+        "value": "Gloria P. Magbanua",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "Gretz Paul Obaña",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      }
+    },
+    {
+      "name": "Buto",
+      "population_2024": {
+        "value": 2129,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 5.0,
+      "punong_barangay": {
+        "value": "Ferdinand S. Encia",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": null,
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Left blank on purpose: Bombo Radyo (7 Oct 2025) reported the SK Chairperson was given an 18-month suspension. Confirm who holds the seat now."
+      }
+    },
+    {
+      "name": "Pula-bato",
+      "population_2024": {
+        "value": 2012,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 4.8,
+      "punong_barangay": {
+        "value": "Neil Ryan T. Escobillo",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "Jhemer John Gulay",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "name_note": "PSA writes 'Pula-bato'; Wikipedia writes 'Pula Bato'."
+    },
+    {
+      "name": "San Isidro",
+      "population_2024": {
+        "value": 1792,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 4.2,
+      "punong_barangay": {
+        "value": "Armando C. Serida",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "Sharia Uy",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      }
+    },
+    {
+      "name": "Palo",
+      "population_2024": {
+        "value": 947,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 2.2,
+      "punong_barangay": {
+        "value": "Sotero N. Castillanes",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "Angel Grace Panes",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      }
+    },
+    {
+      "name": "Albagan",
+      "population_2024": {
+        "value": 760,
+        "sources": [
+          "psa_popcen"
+        ],
+        "status": "confirmed"
+      },
+      "share_pct_psa": 1.8,
+      "punong_barangay": {
+        "value": "Jito V. Suhot",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      },
+      "sk_chairperson": {
+        "value": "Trixie Megan Carillo",
+        "sources": [
+          "wikipedia"
+        ],
+        "status": "needs_confirmation",
+        "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
+      }
+    }
+  ],
+  "population": {
+    "history": [
+      {
+        "year": 1970,
+        "population": 10731,
+        "source": "wikipedia"
+      },
+      {
+        "year": 1975,
+        "population": 15867,
+        "source": "wikipedia"
+      },
+      {
+        "year": 1980,
+        "population": 18057,
+        "source": "wikipedia"
+      },
+      {
+        "year": 1990,
+        "population": 25526,
+        "source": "wikipedia"
+      },
+      {
+        "year": 1995,
+        "population": 28256,
+        "source": "wikipedia"
+      },
+      {
+        "year": 2000,
+        "population": 33011,
+        "source": "wikipedia"
+      },
+      {
+        "year": 2007,
+        "population": 34245,
+        "source": "wikipedia"
+      },
+      {
+        "year": 2010,
+        "population": 36254,
+        "source": "psa_popcen"
+      },
+      {
+        "year": 2015,
+        "population": 39525,
+        "source": "psa_popcen"
+      },
+      {
+        "year": 2020,
+        "population": 41018,
+        "source": "psa_popcen"
+      },
+      {
+        "year": 2024,
+        "population": 42304,
+        "source": "psa_popcen"
+      }
+    ],
+    "annual_growth_rates_pct": [
+      {
+        "period": "2010-2015",
+        "rate": 1.66,
+        "source": "psa_popcen"
+      },
+      {
+        "period": "2015-2020",
+        "rate": 0.78,
+        "source": "psa_popcen"
+      },
+      {
+        "period": "2015-2024",
+        "rate": 0.76,
+        "source": "psa_popcen"
+      },
+      {
+        "period": "2020-2024",
+        "rate": 0.74,
+        "source": "psa_popcen"
+      }
+    ],
+    "note": "1970 to 2007 figures are PSA census counts as quoted on Wikipedia, not read from PSA directly. The PSA release text says the town added 1,206 people from 2020 to 2024; its own table gives 42,304 minus 41,018 = 1,286, which also matches its 3.1 percent figure, so quote 1,286."
+  },
+  "still_needed": [
+    {
+      "item": "Citizen's Charter (services, requirements, fees, processing time)",
+      "ask": "Municipal Information Office",
+      "fills": "src/data/services/, src/data/citizens-charter/"
+    },
+    {
+      "item": "Office and department directory with heads and phone numbers",
+      "ask": "Municipal Information Office / HRMO",
+      "fills": "src/data/directory/departments.json"
+    },
+    {
+      "item": "Barangay hall addresses, phone numbers, full kagawad lists",
+      "ask": "MLGOO (DILG) or Liga ng mga Barangay",
+      "fills": "src/data/directory/barangays.json"
+    },
+    {
+      "item": "SB committee chairs and members",
+      "ask": "Sangguniang Bayan Secretary",
+      "fills": "src/data/directory/legislative.json"
+    },
+    {
+      "item": "Local hotlines: MDRRMO, RHU, PNP, BFP",
+      "ask": "Municipal Information Office",
+      "fills": "hotlines section"
+    },
+    {
+      "item": "Statement of Receipts and Expenditures, budget",
+      "ask": "BLGF / COA annual audit report / Full Disclosure Policy postings",
+      "fills": "src/data/transparency/sre.json, budgetData.ts, src/data/statistics/ari.json"
+    },
+    {
+      "item": "CMCI scores 2014 to 2024",
+      "ask": "cmci.dti.gov.ph (public)",
+      "fills": "src/data/statistics/cmci.json"
+    },
+    {
+      "item": "Barangay populations for 2010, 2015, 2020",
+      "ask": "PSA Table C, population by barangay (public)",
+      "fills": "src/data/statistics/population.json"
+    },
+    {
+      "item": "Town history and highlights",
+      "ask": "Municipal Tourism / Information Office",
+      "fills": "src/data/about/history.json, highlights.json"
+    },
+    {
+      "item": "Ordinances and resolutions",
+      "ask": "Sangguniang Bayan Secretary",
+      "fills": "OpenLGU module"
+    },
+    {
+      "item": "Exact PhilGEPS organisation name",
+      "ask": "PhilGEPS (public)",
+      "fills": "config transparency.procurement.organizationName"
+    },
+    {
+      "item": "Logo files",
+      "ask": "You",
+      "fills": "public/logos/"
+    }
+  ],
+  "template_files_still_holding_los_banos_data": [
+    "src/data/directory/departments.json",
+    "src/data/services/ (services.json and categories/)",
+    "src/data/citizens-charter/",
+    "src/data/statistics/cmci.json",
+    "src/data/statistics/ari.json",
+    "src/data/transparency/sre.json",
+    "src/data/transparency/budgetData.ts",
+    "src/data/about/history.json",
+    "src/data/about/highlights.json",
+    "src/data/tourism/resorts.json",
+    "src/data/websites.json"
+  ],
+  "config_placeholders": {
+    "lgu.provinceWebsite": {
+      "value": "https://southcotabato.gov.ph",
+      "sources": [],
+      "status": "needs_confirmation",
+      "note": "Not checked. Confirm the province's live address."
+    },
+    "lgu.districtEngineeringOffice": {
+      "value": null,
+      "sources": [],
+      "status": "placeholder",
+      "note": "Left out; the template then filters DPWH projects by province. Add the DPWH district office name later for tighter results."
+    },
+    "portal.githubUrl": {
+      "value": "https://github.com/jamez78/bettertampakan",
+      "sources": [],
+      "status": "placeholder",
+      "note": "Assumes the repo will live under your account with this name."
+    },
+    "portal.contactEmail": {
+      "value": "volunteers@bettergov.ph",
+      "sources": [],
+      "status": "placeholder",
+      "note": "Template default. Replace with a project inbox."
+    },
+    "portal.facebookUrl": {
+      "value": "",
+      "sources": [],
+      "status": "placeholder",
+      "note": "Empty until a BetterTampakan page exists."
+    },
+    "portal.discordUrl": {
+      "value": "",
+      "sources": [],
+      "status": "placeholder",
+      "note": "Empty; add the BetterGov community invite if you want it shown."
+    },
+    "portal.*Path (logos)": {
+      "value": "bettertampakan-*",
+      "sources": [],
+      "status": "placeholder",
+      "note": "Six logo files to create in public/logos/."
+    },
+    "transparency.procurement.organizationName": {
+      "value": "MUNICIPALITY OF TAMPAKAN, SOUTH COTABATO",
+      "sources": [],
+      "status": "needs_confirmation",
+      "note": "Must match the PhilGEPS organisation name exactly or the procurement page shows nothing."
+    },
+    "features.openLGU": {
+      "value": false,
+      "sources": [],
+      "status": "placeholder",
+      "note": "Off until ordinances and session records are gathered."
+    },
+    "features.tourism": {
+      "value": false,
+      "sources": [],
+      "status": "placeholder",
+      "note": "Off; the template's tourism data is Los Baños resorts."
+    },
+    "features.statistics": {
+      "value": true,
+      "sources": [],
+      "status": "placeholder",
+      "note": "Population is real. cmci.json and ari.json still hold Los Baños numbers, so replace those or hide those tabs before sharing a preview."
+    },
+    "features.transparency": {
+      "value": true,
+      "sources": [],
+      "status": "placeholder",
+      "note": "Procurement and infrastructure pull live data by name. sre.json and budgetData.ts still hold Los Baños numbers."
+    }
+  }
+}

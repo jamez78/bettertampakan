@@ -1,14 +1,13 @@
 {
   "meta": {
     "location": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "municipality": "Los Baños"
+      "region": "Region XII",
+      "province": "South Cotabato",
+      "municipality": "Tampakan"
     },
     "source": "PSA Census",
-    "notes": "2024 data is projected/latest census.",
+    "notes": "2024 figures are from the 2024 Census of Population (PSA release 2025PR-R1263-054). Barangay figures before 2024 are not yet added.",
     "censusDates": {
-      "1960": "1960-02-15",
       "1970": "1970-05-06",
       "1975": "1975-05-01",
       "1980": "1980-05-01",
@@ -23,167 +22,211 @@
     }
   },
   "municipality": {
-    "name": "Los Baños",
+    "name": "Tampakan",
     "history": [
-      { "year": 1960, "population": 21519 },
-      { "year": 1970, "population": 32167 },
-      { "year": 1975, "population": 38351 },
-      { "year": 1980, "population": 49555 },
-      { "year": 1990, "population": 66211 },
-      { "year": 1995, "population": 71683 },
-      { "year": 2000, "population": 82027 },
-      { "year": 2007, "population": 98631 },
-      { "year": 2010, "population": 101884 },
-      { "year": 2015, "population": 112008 },
-      { "year": 2020, "population": 115353 },
-      { "year": 2024, "population": 117030 }
+      {
+        "year": 1970,
+        "population": 10731
+      },
+      {
+        "year": 1975,
+        "population": 15867
+      },
+      {
+        "year": 1980,
+        "population": 18057
+      },
+      {
+        "year": 1990,
+        "population": 25526
+      },
+      {
+        "year": 1995,
+        "population": 28256
+      },
+      {
+        "year": 2000,
+        "population": 33011
+      },
+      {
+        "year": 2007,
+        "population": 34245
+      },
+      {
+        "year": 2010,
+        "population": 36254
+      },
+      {
+        "year": 2015,
+        "population": 39525
+      },
+      {
+        "year": 2020,
+        "population": 41018
+      },
+      {
+        "year": 2024,
+        "population": 42304
+      }
     ],
     "growthRates": [
-      { "period": "2010-2015", "rate": 1.82 },
-      { "period": "2015-2020", "rate": 0.62 },
-      { "period": "2015-2024", "rate": 0.49 },
-      { "period": "2020-2024", "rate": 0.35 }
+      {
+        "period": "2010-2015",
+        "rate": 1.66
+      },
+      {
+        "period": "2015-2020",
+        "rate": 0.78
+      },
+      {
+        "period": "2015-2024",
+        "rate": 0.76
+      },
+      {
+        "period": "2020-2024",
+        "rate": 0.74
+      }
     ]
   },
   "barangays": [
     {
-      "id": "anos",
-      "name": "Anos",
+      "id": "albagan",
+      "name": "Albagan",
       "history": [
-        { "year": 2010, "population": 7446 },
-        { "year": 2015, "population": 8039 },
-        { "year": 2020, "population": 8815 },
-        { "year": 2024, "population": 9368 }
+        {
+          "year": 2024,
+          "population": 760
+        }
       ]
     },
     {
-      "id": "bagong-silang",
-      "name": "Bagong Silang",
+      "id": "buto",
+      "name": "Buto",
       "history": [
-        { "year": 2010, "population": 577 },
-        { "year": 2015, "population": 629 },
-        { "year": 2020, "population": 707 },
-        { "year": 2024, "population": 727 }
+        {
+          "year": 2024,
+          "population": 2129
+        }
       ]
     },
     {
-      "id": "bambang",
-      "name": "Bambang",
+      "id": "danlag",
+      "name": "Danlag",
       "history": [
-        { "year": 2010, "population": 7021 },
-        { "year": 2015, "population": 7228 },
-        { "year": 2020, "population": 7638 },
-        { "year": 2024, "population": 7816 }
+        {
+          "year": 2024,
+          "population": 2774
+        }
       ]
     },
     {
-      "id": "batong-malake",
-      "name": "Batong Malake",
+      "id": "kipalbig",
+      "name": "Kipalbig",
       "history": [
-        { "year": 2010, "population": 11884 },
-        { "year": 2015, "population": 15314 },
-        { "year": 2020, "population": 12578 },
-        { "year": 2024, "population": 12879 }
+        {
+          "year": 2024,
+          "population": 6204
+        }
       ]
     },
     {
-      "id": "baybayin",
-      "name": "Baybayin (Pob.)",
+      "id": "lambayong",
+      "name": "Lambayong",
       "history": [
-        { "year": 2010, "population": 1307 },
-        { "year": 2015, "population": 1632 },
-        { "year": 2020, "population": 1466 },
-        { "year": 2024, "population": 1538 }
+        {
+          "year": 2024,
+          "population": 2990
+        }
       ]
     },
     {
-      "id": "bayog",
-      "name": "Bayog",
+      "id": "lampitak",
+      "name": "Lampitak",
       "history": [
-        { "year": 2010, "population": 9671 },
-        { "year": 2015, "population": 10460 },
-        { "year": 2020, "population": 11613 },
-        { "year": 2024, "population": 11782 }
+        {
+          "year": 2024,
+          "population": 2911
+        }
       ]
     },
     {
-      "id": "lalakay",
-      "name": "Lalakay",
+      "id": "liberty",
+      "name": "Liberty",
       "history": [
-        { "year": 2010, "population": 4253 },
-        { "year": 2015, "population": 5032 },
-        { "year": 2020, "population": 4234 },
-        { "year": 2024, "population": 4350 }
+        {
+          "year": 2024,
+          "population": 2463
+        }
       ]
     },
     {
-      "id": "maahas",
-      "name": "Maahas",
+      "id": "maltana",
+      "name": "Maltana",
       "history": [
-        { "year": 2010, "population": 6800 },
-        { "year": 2015, "population": 7536 },
-        { "year": 2020, "population": 8785 },
-        { "year": 2024, "population": 9485 }
+        {
+          "year": 2024,
+          "population": 4044
+        }
       ]
     },
     {
-      "id": "malinta",
-      "name": "Malinta",
+      "id": "palo",
+      "name": "Palo",
       "history": [
-        { "year": 2010, "population": 6258 },
-        { "year": 2015, "population": 7368 },
-        { "year": 2020, "population": 6531 },
-        { "year": 2024, "population": 6161 }
+        {
+          "year": 2024,
+          "population": 947
+        }
       ]
     },
     {
-      "id": "mayondon",
-      "name": "Mayondon",
+      "id": "poblacion",
+      "name": "Poblacion",
       "history": [
-        { "year": 2010, "population": 16181 },
-        { "year": 2015, "population": 17071 },
-        { "year": 2020, "population": 17817 },
-        { "year": 2024, "population": 16520 }
+        {
+          "year": 2024,
+          "population": 7757
+        }
       ]
     },
     {
-      "id": "putho-tuntungin",
-      "name": "Putho Tuntungin",
+      "id": "pula-bato",
+      "name": "Pula-bato",
       "history": [
-        { "year": 2010, "population": 8692 },
-        { "year": 2015, "population": 9068 },
-        { "year": 2020, "population": 9300 },
-        { "year": 2024, "population": 9602 }
+        {
+          "year": 2024,
+          "population": 2012
+        }
       ]
     },
     {
-      "id": "san-antonio",
-      "name": "San Antonio",
+      "id": "san-isidro",
+      "name": "San Isidro",
       "history": [
-        { "year": 2010, "population": 13173 },
-        { "year": 2015, "population": 13537 },
-        { "year": 2020, "population": 15978 },
-        { "year": 2024, "population": 16512 }
+        {
+          "year": 2024,
+          "population": 1792
+        }
       ]
     },
     {
-      "id": "tadlak",
-      "name": "Tadlak",
+      "id": "santa-cruz",
+      "name": "Santa Cruz",
       "history": [
-        { "year": 2010, "population": 3342 },
-        { "year": 2015, "population": 3319 },
-        { "year": 2020, "population": 4043 },
-        { "year": 2024, "population": 4377 }
+        {
+          "year": 2024,
+          "population": 3147
+        }
       ]
     },
     {
-      "id": "timugan",
-      "name": "Timugan (Pob.)",
+      "id": "tablu",
+      "name": "Tablu",
       "history": [
-        { "year": 2010, "population": 5279 },
-        { "year": 2015, "population": 5775 },
-        { "year": 2020, "population": 5848 },
-        { "year": 2024, "population": 5913 }
+        {
+          "year": 2024,
+          "population": 2374
+        }
       ]
     }
   ]
