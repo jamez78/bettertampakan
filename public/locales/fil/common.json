@@ -98,6 +98,7 @@
     "viewDirectory": "Tingnan ang Direktoryo"
   },
   "preview": {
-    "notice": "Preview. This portal is a work in progress and some information has not yet been confirmed with the LGU."
+    "notice": "Preview. This portal is a work in progress and some information has not yet been confirmed with the LGU.",
+    "coverageLink": "Saklaw at mga limitasyon"
   }
 }

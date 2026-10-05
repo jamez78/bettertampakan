@@ -153,6 +153,11 @@ const SitemapPage: FC = () => {
       icon: <ScrollText className='w-5 h-5' />,
       links: [
         {
+          title: 'Coverage & limitations',
+          url: '/coverage',
+          description: 'What is confirmed and what is still missing',
+        },
+        {
           title: 'Accessibility',
           url: '/accessibility',
           description: 'Accessibility statement and features',

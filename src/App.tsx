@@ -1,4 +1,5 @@
 import {
+  Link,
   Navigate,
   Route,
   BrowserRouter as Router,
@@ -22,6 +23,7 @@ import { SkipLink } from '@/components/layout/SkipLink';
 // --- Lazy-loaded Pages ---
 const Home = lazy(() => import('@/pages/Home'));
 const AboutPage = lazy(() => import('@/pages/about'));
+const CoveragePage = lazy(() => import('@/pages/coverage'));
 const ContactUs = lazy(() => import('@/pages/ContactUs'));
 const AccessibilityPage = lazy(() => import('@/pages/accessibility'));
 const SearchPage = lazy(() => import('@/pages/Search'));
@@ -153,7 +155,10 @@ function AppContent() {
           role='note'
           className='bg-kapwa-bg-warning-weak text-kapwa-text-strong px-4 py-1.5 text-center text-xs'
         >
-          {t('preview.notice')}
+          {t('preview.notice')}{' '}
+          <Link to='/coverage' className='font-bold underline'>
+            {t('preview.coverageLink')}
+          </Link>
         </div>
       )}
       {!isAdminRoute && <Navbar />}
@@ -165,6 +170,7 @@ function AppContent() {
             {/* Standard Global Pages */}
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<AboutPage />} />
+            <Route path='/coverage' element={<CoveragePage />} />
             <Route path='/contact' element={<ContactUs />} />
             <Route path='/accessibility' element={<AccessibilityPage />} />
             <Route path='/search' element={<SearchPage />} />

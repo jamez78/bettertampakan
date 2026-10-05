@@ -140,6 +140,12 @@ export const Footer: FC = () => {
               GitHub
             </a>
             <Link
+              to='/coverage'
+              className='text-[10px] font-bold tracking-widest text-kapwa-text-disabled uppercase hover:text-kapwa-text-inverse'
+            >
+              Coverage &amp; limitations
+            </Link>
+            <Link
               to='/sitemap'
               className='text-[10px] font-bold tracking-widest text-kapwa-text-disabled uppercase hover:text-kapwa-text-inverse'
             >

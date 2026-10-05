@@ -2,6 +2,7 @@ import { FC } from 'react';
 
 import GovernmentSection from '@/components/home/GovernmentSection';
 import Hero from '@/components/home/Hero';
+import HomeEssentials from '@/components/home/HomeEssentials';
 import ServicesSection from '@/components/home/ServicesSection';
 import TimelineSection from '@/components/home/TimelineSection';
 import WeatherMapSection from '@/components/home/WeatherMapSection';
@@ -14,6 +15,10 @@ const Home: FC = () => {
       <div className='animate-in fade-in duration-700'>
         <ErrorBoundary name='Hero'>
           <Hero />
+        </ErrorBoundary>
+
+        <ErrorBoundary name='HomeEssentials'>
+          <HomeEssentials />
         </ErrorBoundary>
 
         {/* Using space-y-16 for consistent section spacing per design system */}
