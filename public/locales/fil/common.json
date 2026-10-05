@@ -25,7 +25,8 @@
     "governmentServices": "Mga Serbisyo ng Pamahalaan",
     "description": "I-access ang opisyal na mga serbisyo ng pamahalaan nang mabilis at madali. Hanapin ang kailangan para sa pagkamamamayan, negosyo, edukasyon, at iba pa.",
     "viewAll": "Tingnan ang Lahat ng Serbisyo",
-    "viewAllCategory": "Tingnan ang Mga Serbisyo"
+    "viewAllCategory": "Tingnan ang Mga Serbisyo",
+    "comingSoon": "Service guides are being prepared and will appear here."
   },
   "weather": {
     "title": "Mga Update sa Panahon"
@@ -108,5 +109,8 @@
     "directoryTitle": "Opisyal na Direktoryo",
     "directoryDescription": "Maghanap ng impormasyon ng kontak para sa mga opisyal ng pamahalaan, ahensya, at opisina sa pambansa at lokal na antas.",
     "viewDirectory": "Tingnan ang Direktoryo"
+  },
+  "preview": {
+    "notice": "Preview. This portal is a work in progress and some information has not yet been confirmed with the LGU."
   }
 }

@@ -28,6 +28,7 @@ import { Card, CardContent } from '@/components/ui/Card';
 import { toTitleCase } from '@/lib/stringUtils';
 
 import executiveData from '@/data/directory/executive.json';
+import departmentsData from '@/data/directory/departments.json';
 import legislativeData from '@/data/directory/legislative.json';
 
 // --- Types ---
@@ -253,11 +254,14 @@ export default function ElectedOfficialsPage() {
       c => c.chairperson?.toLowerCase() === memberName.toLowerCase()
     ) as Committee[];
 
+  const committeeCount = sbData?.permanent_committees?.length ?? 0;
+
   const websiteUrl = sbData?.website
     ? sbData.website.startsWith('http')
       ? sbData.website
       : `https://${sbData.website}`
     : undefined;
+  const isFacebookPage = websiteUrl?.includes('facebook.com') ?? false;
 
   return (
     <div className='space-y-8'>
@@ -331,13 +335,14 @@ export default function ElectedOfficialsPage() {
                     icon={MapPinIcon}
                     label='Office Location'
                     value={sbData.address}
+                    wrap
                   />
                 )}
                 {websiteUrl && (
                   <ContactItem
                     icon={GlobeIcon}
-                    label='Official Portal'
-                    value='Visit Website'
+                    label={isFacebookPage ? 'Facebook page' : 'Official Portal'}
+                    value={isFacebookPage ? 'Visit page' : 'Visit Website'}
                     href={websiteUrl}
                     isExternal
                   />
@@ -358,58 +363,61 @@ export default function ElectedOfficialsPage() {
           </div>
 
           {/* Link to committees */}
-          <div className='border-kapwa-border-weak mt-6 flex flex-col items-center justify-between gap-4 border-t pt-6 sm:flex-row'>
-            <div className='flex items-center gap-3'>
-              <BookOpenIcon className='text-kapwa-text-disabled h-5 w-5 shrink-0' />
-              <div>
-                <p className='text-kapwa-text-strong text-sm font-bold'>
-                  Standing Committees
-                </p>
-                <p className='text-kapwa-text-disabled text-xs'>
-                  {sbData.permanent_committees?.length ?? 0} active committees
-                  with full member listings
-                </p>
+          {committeeCount > 0 && (
+            <div className='border-kapwa-border-weak mt-6 flex flex-col items-center justify-between gap-4 border-t pt-6 sm:flex-row'>
+              <div className='flex items-center gap-3'>
+                <BookOpenIcon className='text-kapwa-text-disabled h-5 w-5 shrink-0' />
+                <div>
+                  <p className='text-kapwa-text-strong text-sm font-bold'>
+                    Standing Committees
+                  </p>
+                  <p className='text-kapwa-text-disabled text-xs'>
+                    {committeeCount} active committees with full member listings
+                  </p>
+                </div>
               </div>
+              <Link to='/government/elected-officials/committees'>
+                <Button
+                  variant='outline'
+                  size='sm'
+                  className='text-[10px] font-bold tracking-widest uppercase'
+                  rightIcon={<ArrowRight className='h-3 w-3' />}
+                >
+                  View Committees
+                </Button>
+              </Link>
             </div>
-            <Link to='/government/elected-officials/committees'>
-              <Button
-                variant='outline'
-                size='sm'
-                className='text-[10px] font-bold tracking-widest uppercase'
-                rightIcon={<ArrowRight className='h-3 w-3' />}
-              >
-                View Committees
-              </Button>
-            </Link>
-          </div>
+          )}
         </DetailSection>
       )}
 
       {/* ── SECTION 4: DEPARTMENTS BRIDGE ── */}
-      <div className='border-kapwa-border-weak bg-kapwa-bg-surface-raised flex flex-col items-center justify-between gap-4 rounded-2xl border p-6 md:flex-row'>
-        <div className='flex items-center gap-4'>
-          <Briefcase className='text-kapwa-text-support h-8 w-8 shrink-0' />
-          <div>
-            <h4 className='text-kapwa-text-strong font-bold'>
-              Looking for Department Heads?
-            </h4>
-            <p className='text-kapwa-text-disabled text-sm'>
-              Municipal Treasurer, Assessor, Engineer, and other service heads
-              are listed in the directory.
-            </p>
+      {departmentsData.length > 0 && (
+        <div className='border-kapwa-border-weak bg-kapwa-bg-surface-raised flex flex-col items-center justify-between gap-4 rounded-2xl border p-6 md:flex-row'>
+          <div className='flex items-center gap-4'>
+            <Briefcase className='text-kapwa-text-support h-8 w-8 shrink-0' />
+            <div>
+              <h4 className='text-kapwa-text-strong font-bold'>
+                Looking for Department Heads?
+              </h4>
+              <p className='text-kapwa-text-disabled text-sm'>
+                Municipal Treasurer, Assessor, Engineer, and other service heads
+                are listed in the directory.
+              </p>
+            </div>
           </div>
+          <Link to='/government/departments'>
+            <Button
+              variant='outline'
+              size='sm'
+              className='text-[10px] font-bold tracking-widest uppercase'
+              rightIcon={<ArrowRight className='h-3 w-3' />}
+            >
+              Go to Departments
+            </Button>
+          </Link>
         </div>
-        <Link to='/government/departments'>
-          <Button
-            variant='outline'
-            size='sm'
-            className='text-[10px] font-bold tracking-widest uppercase'
-            rightIcon={<ArrowRight className='h-3 w-3' />}
-          >
-            Go to Departments
-          </Button>
-        </Link>
-      </div>
+      )}
     </div>
   );
 }

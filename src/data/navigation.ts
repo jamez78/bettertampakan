@@ -104,7 +104,6 @@ export const footerNavigation = {
         { label: 'Elected Officials', href: '/government/elected-officials' },
         { label: 'Departments', href: '/government/departments' },
         { label: 'Barangay Directory', href: '/government/barangays' },
-        { label: 'OpenLGU Portal', href: '/openlgu' },
         { label: 'Transparency', href: '/transparency/financial' },
       ],
     },
@@ -187,5 +186,5 @@ export const footerNavigation = {
       href: config.portal.githubUrl,
       target: '_blank',
     },
-  ],
+  ].filter(link => Boolean(link.href)),
 };

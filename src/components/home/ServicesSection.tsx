@@ -44,6 +44,9 @@ const ServicesSection: FC = () => {
           <h2 className='text-kapwa-text-strong mb-4 kapwa-heading-lg font-bold'>
             {t('services.governmentServices')}
           </h2>
+          <p className='text-kapwa-text-strong mx-auto mb-2 max-w-2xl font-medium'>
+            {t('services.comingSoon')}
+          </p>
           <p className='text-kapwa-text-support mx-auto max-w-2xl'>
             {t('services.description')}
           </p>

@@ -64,97 +64,70 @@
   "profile": {
     "name": {
       "value": "Tampakan",
-      "sources": [
-        "psa_psgc"
-      ],
+      "sources": ["psa_psgc"],
       "status": "confirmed"
     },
     "full_name": {
       "value": "Municipality of Tampakan",
-      "sources": [
-        "psa_psgc"
-      ],
+      "sources": ["psa_psgc"],
       "status": "confirmed"
     },
     "province": {
       "value": "South Cotabato",
-      "sources": [
-        "psa_psgc"
-      ],
+      "sources": ["psa_psgc"],
       "status": "confirmed"
     },
     "region": {
       "value": "Region XII (SOCCSKSARGEN)",
-      "sources": [
-        "psa_psgc"
-      ],
+      "sources": ["psa_psgc"],
       "status": "confirmed"
     },
     "psgc_code": {
       "value": "1206314000",
-      "sources": [
-        "psa_psgc"
-      ],
+      "sources": ["psa_psgc"],
       "status": "confirmed"
     },
     "income_class": {
       "value": "1st",
-      "sources": [
-        "psa_psgc"
-      ],
+      "sources": ["psa_psgc"],
       "status": "confirmed",
       "note": "PSA lists 1st class. DTI and Rappler still show the older 2nd class label."
     },
     "population_2024": {
       "value": 42304,
-      "sources": [
-        "psa_popcen",
-        "psa_psgc"
-      ],
+      "sources": ["psa_popcen", "psa_psgc"],
       "status": "confirmed"
     },
     "barangay_count": {
       "value": 14,
-      "sources": [
-        "psa_popcen"
-      ],
+      "sources": ["psa_popcen"],
       "status": "confirmed"
     },
     "registered_voters_2025": {
       "value": 30461,
-      "sources": [
-        "rappler_2025"
-      ],
+      "sources": ["rappler_2025"],
       "status": "confirmed"
     },
     "legislative_district": {
       "value": "South Cotabato 1st District",
-      "sources": [
-        "wikipedia"
-      ],
+      "sources": ["wikipedia"],
       "status": "needs_confirmation"
     },
     "land_area_km2": {
       "value": 390.0,
-      "sources": [
-        "wikipedia"
-      ],
+      "sources": ["wikipedia"],
       "status": "needs_confirmation",
       "note": "Confirm against the LGU's CLUP or DENR-LMB figure."
     },
     "founded": {
       "value": "1970-06-21",
-      "sources": [
-        "wikipedia"
-      ],
+      "sources": ["wikipedia"],
       "status": "needs_confirmation",
       "note": "Wikipedia gives 21 June 1970; Wikidata shows 1966. Confirm with the LGU."
     },
     "zip_code": {
       "value": "9507",
-      "sources": [
-        "wikipedia"
-      ],
+      "sources": ["wikipedia"],
       "status": "needs_confirmation"
     },
     "coordinates": {
@@ -162,65 +135,46 @@
         "lat": 6.4439,
         "lon": 124.9266
       },
-      "sources": [
-        "wikipedia"
-      ],
+      "sources": ["wikipedia"],
       "status": "needs_confirmation",
       "note": "Town-centre point; fine for the weather widget and map."
     },
     "motto": {
       "value": "Mabulawanong Tampakan",
-      "sources": [
-        "wikipedia"
-      ],
+      "sources": ["wikipedia"],
       "status": "needs_confirmation"
     },
     "electricity_provider": {
       "value": "South Cotabato I Electric Cooperative (SOCOTECO I)",
-      "sources": [
-        "wikipedia"
-      ],
+      "sources": ["wikipedia"],
       "status": "needs_confirmation"
     }
   },
   "contacts": {
     "municipal_hall_address": {
       "value": "Poblacion, Tampakan, South Cotabato",
-      "sources": [
-        "dti_cmci"
-      ],
+      "sources": ["dti_cmci"],
       "status": "confirmed"
     },
     "telephone": {
       "value": "(083) 227-1001",
-      "sources": [
-        "dti_cmci",
-        "lgu_fb"
-      ],
+      "sources": ["dti_cmci", "lgu_fb"],
       "status": "confirmed"
     },
     "email": {
       "value": "lgutampakan2019@gmail.com",
-      "sources": [
-        "dti_cmci",
-        "lgu_fb"
-      ],
+      "sources": ["dti_cmci", "lgu_fb"],
       "status": "confirmed"
     },
     "facebook_page": {
       "value": "https://www.facebook.com/p/Municipal-Government-of-Tampakan-100069061335217/",
-      "sources": [
-        "lgu_fb",
-        "dti_cmci"
-      ],
+      "sources": ["lgu_fb", "dti_cmci"],
       "status": "confirmed",
       "note": "DTI lists this page as the LGU's website link."
     },
     "official_website": {
       "value": null,
-      "sources": [
-        "wikipedia"
-      ],
+      "sources": ["wikipedia"],
       "status": "needs_confirmation",
       "note": "Wikipedia and Wikidata list tampakanscot.gov.ph but it could not be confirmed as live. Treat the Facebook page as the official channel."
     }
@@ -246,11 +200,7 @@
         "role": "Vice Mayor",
         "name": {
           "value": "Ric A. Magbanua",
-          "sources": [
-            "bombo_2025",
-            "rappler_2025",
-            "wikipedia"
-          ],
+          "sources": ["bombo_2025", "rappler_2025", "wikipedia"],
           "status": "confirmed",
           "note": "Bombo Radyo (7 Oct 2025) names 'Vice Mayor Ric Magbanua'; Rappler shows 'Toton Magbanua' winning the seat in May 2025. The DILG South Cotabato page and the BetterGov.ph directory list Anadel T. Magbanua, but both show the 2022 to 2025 term: their council includes Jabib Bides and Raymond Seloterio, who were not candidates in 2025, and omits 2025 winners Michael Escobillo and Catherine Tabaco. The two Magbanuas swapped seats in 2025: Ric moved from councilor to vice mayor, Anadel from vice mayor to councilor. Middle initial is from Wikipedia only."
         },
@@ -262,10 +212,7 @@
         "role": "Municipal Councilor",
         "name": {
           "value": "Michael T. Escobillo",
-          "sources": [
-            "rappler_2025",
-            "wikipedia"
-          ],
+          "sources": ["rappler_2025", "wikipedia"],
           "status": "needs_confirmation",
           "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia. Wikipedia spells it both 'Michael' and 'Micheal'."
         },
@@ -276,10 +223,7 @@
         "role": "Municipal Councilor",
         "name": {
           "value": "John Mark C. Baldon",
-          "sources": [
-            "rappler_2025",
-            "wikipedia"
-          ],
+          "sources": ["rappler_2025", "wikipedia"],
           "status": "needs_confirmation",
           "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
         },
@@ -290,10 +234,7 @@
         "role": "Municipal Councilor",
         "name": {
           "value": "Erve T. Tutor",
-          "sources": [
-            "rappler_2025",
-            "wikipedia"
-          ],
+          "sources": ["rappler_2025", "wikipedia"],
           "status": "needs_confirmation",
           "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
         },
@@ -304,10 +245,7 @@
         "role": "Municipal Councilor",
         "name": {
           "value": "Roy M. Cagas",
-          "sources": [
-            "rappler_2025",
-            "wikipedia"
-          ],
+          "sources": ["rappler_2025", "wikipedia"],
           "status": "needs_confirmation",
           "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
         },
@@ -318,10 +256,7 @@
         "role": "Municipal Councilor",
         "name": {
           "value": "Celso F. Doc",
-          "sources": [
-            "rappler_2025",
-            "wikipedia"
-          ],
+          "sources": ["rappler_2025", "wikipedia"],
           "status": "needs_confirmation",
           "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
         },
@@ -332,10 +267,7 @@
         "role": "Municipal Councilor",
         "name": {
           "value": "Alexey C. Cariaga",
-          "sources": [
-            "rappler_2025",
-            "wikipedia"
-          ],
+          "sources": ["rappler_2025", "wikipedia"],
           "status": "needs_confirmation",
           "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
         },
@@ -346,10 +278,7 @@
         "role": "Municipal Councilor",
         "name": {
           "value": "Anadel T. Magbanua",
-          "sources": [
-            "rappler_2025",
-            "wikipedia"
-          ],
+          "sources": ["rappler_2025", "wikipedia"],
           "status": "needs_confirmation",
           "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia. Vice mayor in the 2022 to 2025 term, which is why the DILG page and BetterGov directory still list him in that seat."
         },
@@ -360,10 +289,7 @@
         "role": "Municipal Councilor",
         "name": {
           "value": "Catherine T. Tabaco",
-          "sources": [
-            "rappler_2025",
-            "wikipedia"
-          ],
+          "sources": ["rappler_2025", "wikipedia"],
           "status": "needs_confirmation",
           "note": "Top 8 in Rappler's count (8th place 12,387 votes vs 9th place 7,984). Full name and middle initial from Wikipedia."
         },
@@ -376,9 +302,7 @@
         "role": "Liga ng mga Barangay Representative",
         "name": {
           "value": "Sotero N. Castillanes",
-          "sources": [
-            "wikipedia"
-          ],
+          "sources": ["wikipedia"],
           "status": "needs_confirmation",
           "note": "Per Wikipedia he is ABC Vice President (Punong Barangay of Palo) sitting in place of ABC President Neil Ryan T. Escobillo, who serves at the provincial board."
         }
@@ -387,9 +311,7 @@
         "role": "Indigenous Peoples Mandatory Representative",
         "name": {
           "value": "Amay Collado",
-          "sources": [
-            "wikipedia"
-          ],
+          "sources": ["wikipedia"],
           "status": "needs_confirmation",
           "note": "He ran for councilor in May 2025 and placed 9th, so the seat may have changed hands. Confirm."
         }
@@ -398,9 +320,7 @@
         "role": "SK Federation President",
         "name": {
           "value": "Christian Dave Ho",
-          "sources": [
-            "wikipedia"
-          ],
+          "sources": ["wikipedia"],
           "status": "needs_confirmation",
           "note": "SK Chairperson of Danlag per Wikipedia."
         }
@@ -412,25 +332,19 @@
       "name": "Poblacion",
       "population_2024": {
         "value": 7757,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 18.3,
       "punong_barangay": {
         "value": "Jose Nilo G. Vargas",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "Ian Clark Cornelio",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       }
@@ -439,25 +353,19 @@
       "name": "Kipalbig",
       "population_2024": {
         "value": 6204,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 14.7,
       "punong_barangay": {
         "value": "Rolando D. Malabuyoc",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "Jester Cloyd Oñez",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       }
@@ -466,25 +374,19 @@
       "name": "Maltana",
       "population_2024": {
         "value": 4044,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 9.6,
       "punong_barangay": {
         "value": "Eric Entong",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "John Rupert Suba",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       }
@@ -493,25 +395,19 @@
       "name": "Santa Cruz",
       "population_2024": {
         "value": 3147,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 7.4,
       "punong_barangay": {
         "value": "Wilfredo M. Epe",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": null,
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "No SK Chairperson listed in any source found."
       }
@@ -520,25 +416,19 @@
       "name": "Lambayong",
       "population_2024": {
         "value": 2990,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 7.1,
       "punong_barangay": {
         "value": "Glenn F. Tabano",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "Vincent Paul Bunga",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       }
@@ -547,25 +437,19 @@
       "name": "Lampitak",
       "population_2024": {
         "value": 2911,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 6.9,
       "punong_barangay": {
         "value": "Marinillo M. Ngalon",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "Vanessa Garcia",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       }
@@ -574,25 +458,19 @@
       "name": "Danlag",
       "population_2024": {
         "value": 2774,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 6.6,
       "punong_barangay": {
         "value": "Judith J. Magbanua",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "Christian Dave Ho",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       }
@@ -601,25 +479,19 @@
       "name": "Liberty",
       "population_2024": {
         "value": 2463,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 5.8,
       "punong_barangay": {
         "value": "Nolin S. Jalagat",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "Jorimar Cabañas",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       }
@@ -628,25 +500,19 @@
       "name": "Tablu",
       "population_2024": {
         "value": 2374,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 5.6,
       "punong_barangay": {
         "value": "Gloria P. Magbanua",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "Gretz Paul Obaña",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       }
@@ -655,25 +521,19 @@
       "name": "Buto",
       "population_2024": {
         "value": 2129,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 5.0,
       "punong_barangay": {
         "value": "Ferdinand S. Encia",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": null,
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Left blank on purpose: Bombo Radyo (7 Oct 2025) reported the SK Chairperson was given an 18-month suspension. Confirm who holds the seat now."
       }
@@ -682,25 +542,19 @@
       "name": "Pula-bato",
       "population_2024": {
         "value": 2012,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 4.8,
       "punong_barangay": {
         "value": "Neil Ryan T. Escobillo",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "Jhemer John Gulay",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
@@ -710,25 +564,19 @@
       "name": "San Isidro",
       "population_2024": {
         "value": 1792,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 4.2,
       "punong_barangay": {
         "value": "Armando C. Serida",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "Sharia Uy",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       }
@@ -737,25 +585,19 @@
       "name": "Palo",
       "population_2024": {
         "value": 947,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 2.2,
       "punong_barangay": {
         "value": "Sotero N. Castillanes",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "Angel Grace Panes",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       }
@@ -764,25 +606,19 @@
       "name": "Albagan",
       "population_2024": {
         "value": 760,
-        "sources": [
-          "psa_popcen"
-        ],
+        "sources": ["psa_popcen"],
         "status": "confirmed"
       },
       "share_pct_psa": 1.8,
       "punong_barangay": {
         "value": "Jito V. Suhot",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       },
       "sk_chairperson": {
         "value": "Trixie Megan Carillo",
-        "sources": [
-          "wikipedia"
-        ],
+        "sources": ["wikipedia"],
         "status": "needs_confirmation",
         "note": "Elected Oct 2023. Name from Wikipedia only. Confirm with the LGU or DILG."
       }

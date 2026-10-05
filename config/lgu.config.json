@@ -43,9 +43,7 @@
     },
     "infrastructure": {
       "searchString": "Tampakan",
-      "exactMatchTargets": [
-        "tampakan"
-      ]
+      "exactMatchTargets": ["tampakan"]
     }
   },
   "dataPaths": {

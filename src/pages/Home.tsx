@@ -22,6 +22,10 @@ const Home: FC = () => {
 
         {/* Using space-y-16 for consistent section spacing per design system */}
         <div className='space-y-16 py-12'>
+          <ErrorBoundary name='Government'>
+            <GovernmentSection />
+          </ErrorBoundary>
+
           <ErrorBoundary name='Services'>
             <ServicesSection />
           </ErrorBoundary>
@@ -32,11 +36,6 @@ const Home: FC = () => {
 
           <ErrorBoundary name='WeatherMap'>
             <WeatherMapSection />
-          </ErrorBoundary>
-
-
-          <ErrorBoundary name='Government'>
-            <GovernmentSection />
           </ErrorBoundary>
         </div>
       </div>

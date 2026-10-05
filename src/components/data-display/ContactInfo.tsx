@@ -13,6 +13,8 @@ interface ContactItemProps {
   href?: string;
   isExternal?: boolean;
   className?: string;
+  /** Let long values wrap onto more lines instead of truncating */
+  wrap?: boolean;
 }
 
 // --- Components ---
@@ -29,6 +31,7 @@ export function ContactItem({
   href,
   isExternal,
   className,
+  wrap,
 }: ContactItemProps) {
   // Logic: Handle null, undefined, or empty arrays from JSON data
   if (!value || (Array.isArray(value) && value.length === 0)) return null;
@@ -57,7 +60,12 @@ export function ContactItem({
         <p className='text-kapwa-text-disabled mb-1 text-[10px] leading-none font-bold tracking-widest uppercase'>
           {label}
         </p>
-        <div className='text-kapwa-text-support group-hover:text-kapwa-text-strong truncate text-sm font-bold transition-colors'>
+        <div
+          className={cn(
+            'text-kapwa-text-support group-hover:text-kapwa-text-strong text-sm font-bold transition-colors',
+            wrap ? 'break-words' : 'truncate'
+          )}
+        >
           {Array.isArray(value) ? value[0] : value}
         </div>
       </div>

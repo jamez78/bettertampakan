@@ -280,11 +280,6 @@ const SitemapPage: FC = () => {
       icon: <FileCheck className='w-5 h-5' />,
       links: [
         {
-          title: 'Weather',
-          url: '/data/weather',
-          description: 'Real-time weather information',
-        },
-        {
           title: 'Foreign Exchange Rates',
           url: '/data/forex',
           description: 'Current foreign exchange rates',

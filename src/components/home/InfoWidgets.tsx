@@ -4,49 +4,15 @@ import * as LucideIcons from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 import { fetchForexData } from '../../lib/forex';
-import { fetchWeatherData } from '../../lib/weather';
-import { ForexRate, WeatherData } from '../../types';
+import { ForexRate } from '../../types';
 import { Card, CardContent, CardHeader } from '../ui/Card';
 import CriticalHotlinesWidget from '../widgets/CriticalHotlinesWidget';
 
 const InfoWidgets: FC = () => {
   const { t } = useTranslation('common');
-  const [weatherData, setWeatherData] = useState<WeatherData[]>([]);
   const [forexRates, setForexRates] = useState<ForexRate[]>([]);
-  const [isLoadingWeather, setIsLoadingWeather] = useState<boolean>(true);
   const [isLoadingForex, setIsLoadingForex] = useState<boolean>(true);
-  const [weatherError, setWeatherError] = useState<string | null>(null);
   const [forexError, setForexError] = useState<string | null>(null);
-
-  // Function to get weather icon component
-  const getWeatherIcon = (iconName: string) => {
-    const Icon = LucideIcons[iconName as keyof typeof LucideIcons];
-    return Icon ? <Icon className='h-8 w-8' /> : null;
-  };
-
-  // Fetch weather data
-  useEffect(() => {
-    const getWeatherData = async () => {
-      try {
-        setIsLoadingWeather(true);
-        setWeatherError(null);
-
-        const transformedData = await fetchWeatherData();
-        setWeatherData(transformedData);
-      } catch (error) {
-        console.error('Error fetching weather data:', error);
-        setWeatherError(
-          error instanceof Error
-            ? error.message
-            : 'Failed to fetch weather data'
-        );
-      } finally {
-        setIsLoadingWeather(false);
-      }
-    };
-
-    getWeatherData();
-  }, []);
 
   // Fetch forex data
   useEffect(() => {
@@ -89,72 +55,7 @@ const InfoWidgets: FC = () => {
             {t('data.description')}
           </p>
         </div>
-        <div className='grid grid-cols-1 gap-6 lg:grid-cols-3'>
-          {/* Weather Widget */}
-          <Card>
-            <CardHeader className='bg-kapwa-bg-brand-weak'>
-              <h3 className='text-kapwa-text-strong flex items-center text-xl font-semibold'>
-                <LucideIcons.Cloud className='text-kapwa-text-brand mr-2 h-5 w-5' />
-                {t('weather.title')}
-              </h3>
-            </CardHeader>
-            <CardContent className='@container'>
-              {isLoadingWeather ? (
-                <div className='flex h-40 items-center justify-center'>
-                  <LucideIcons.Loader className='text-kapwa-text-brand h-8 w-8 animate-spin' />
-                </div>
-              ) : weatherError ? (
-                <div className='p-4 text-center text-kapwa-text-danger'>
-                  <LucideIcons.AlertCircle className='mx-auto mb-2 h-8 w-8' />
-                  <p>{weatherError}</p>
-                </div>
-              ) : (
-                <div className='grid grid-cols-2 gap-4 @md:grid-cols-4'>
-                  {weatherData.map(location => (
-                    <div
-                      key={location.location}
-                      className='border-kapwa-border-weak bg-kapwa-bg-surface flex flex-col items-center rounded-lg border p-3 uppercase'
-                    >
-                      <div className='text-kapwa-text-accent-yellow mb-1'>
-                        {getWeatherIcon(location.icon)}
-                      </div>
-                      <div className='text-lg font-semibold'>
-                        {location.location}
-                      </div>
-                      <div className='text-2xl font-bold'>
-                        {location.temperature}°C
-                      </div>
-                      <div className='text-kapwa-text-support text-center text-sm'>
-                        {location.condition}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-              <div className='space-between flex w-full items-center'>
-                <p className='text-kapwa-text-support mt-4 text-right text-sm'>
-                  Weather data provided by{' '}
-                  <a
-                    href='https://openweathermap.org/'
-                    className='hover:text-kapwa-text-strong text-kapwa-text-strong underline'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    OpenWeather
-                  </a>
-                </p>
-                <div className='mt-4 flex-1 text-right'>
-                  <a
-                    href='/data/weather'
-                    className='text-kapwa-text-brand text-sm hover:underline'
-                  >
-                    Detailed Forecast
-                  </a>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
+        <div className='grid grid-cols-1 gap-6 lg:grid-cols-2'>
           {/* Forex Widget */}
           <Card>
             <CardHeader className='bg-kapwa-bg-brand-weak'>

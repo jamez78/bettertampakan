@@ -25,7 +25,8 @@
     "governmentServices": "Government Services",
     "description": "Access official government services quickly and easily. Find what you need for citizenship, business, education, and more.",
     "viewAll": "View All Services",
-    "viewAllCategory": "View Services"
+    "viewAllCategory": "View Services",
+    "comingSoon": "Service guides are being prepared and will appear here."
   },
   "weather": {
     "title": "Weather Updates"
@@ -105,5 +106,8 @@
     "directoryTitle": "Official Directory",
     "directoryDescription": "Find contact information for government officials, agencies, and offices at national and local levels.",
     "viewDirectory": "View Directory"
+  },
+  "preview": {
+    "notice": "Preview. This portal is a work in progress and some information has not yet been confirmed with the LGU."
   }
 }

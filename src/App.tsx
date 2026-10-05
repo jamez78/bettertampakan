@@ -9,6 +9,7 @@ import {
 import { lazy, Suspense } from 'react';
 
 import { NuqsAdapter } from 'nuqs/adapters/react-router/v6';
+import { useTranslation } from 'react-i18next';
 
 import { config } from '@/lib/lguConfig';
 import { Footer } from '@/components/layout/Footer';
@@ -32,7 +33,6 @@ const SitemapPage = lazy(() => import('@/pages/sitemap'));
 const Discord = lazy(() => import('@/pages/Discord'));
 
 // Data Utilities
-const WeatherPage = lazy(() => import('@/pages/data/weather'));
 const ForexPage = lazy(() => import('@/pages/data/forex'));
 
 // Services Module
@@ -149,12 +149,21 @@ function App() {
 
 function AppContent() {
   const location = useLocation();
+  const { t } = useTranslation('common');
   const isAdminRoute = location.pathname.startsWith('/admin');
 
   return (
     <div className='flex flex-col min-h-screen'>
       <SkipLink />
       <SEO />
+      {!isAdminRoute && (
+        <div
+          role='note'
+          className='bg-kapwa-bg-warning-weak text-kapwa-text-strong px-4 py-1.5 text-center text-xs'
+        >
+          {t('preview.notice')}
+        </div>
+      )}
       {!isAdminRoute && <Navbar />}
       {!isAdminRoute && <Ticker />}
       <ScrollToTop />
@@ -175,7 +184,6 @@ function AppContent() {
             <Route path='/discord' element={<Discord />} />
 
             {/* Data Utilities */}
-            <Route path='/data/weather' element={<WeatherPage />} />
             <Route path='/data/forex' element={<ForexPage />} />
 
             {/* Services Module */}

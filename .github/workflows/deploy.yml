@@ -4,6 +4,7 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 permissions: {}
 
@@ -43,10 +44,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     name: Deploy to Cloudflare Pages
-    # PR-triggered runs never had access to CLOUDFLARE_API_TOKEN (repo secrets
-    # are not exposed to pull_request events), so every PR deploy failed.
-    # Deploy only on pushes to main; PRs get the Quality Gate above.
-    if: github.event_name == 'push'
+    # Deploy only when started by hand from the Actions tab. Pushes and PRs
+    # get the Quality Gate above.
+    if: github.event_name == 'workflow_dispatch'
     environment: production
     needs: quality-gate
     permissions:
@@ -79,6 +79,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=betterlb
+          command: pages deploy dist --project-name=bettertampakan
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           wranglerVersion: '4.131.0'

@@ -13,12 +13,12 @@ import type {
 /**
  * CORS Configuration
  * Restricts API access to trusted origins only (security fix for T-059)
- * Production: betterlb.pages.dev and custom domain
+ * Production: bettertampakan.pages.dev and custom domain
  * Development: localhost for local development
  */
 const ALLOWED_ORIGINS = [
-  'https://betterlb.pages.dev',
-  'https://betterlb.gov.ph', // Custom domain if configured
+  'https://bettertampakan.pages.dev',
+  'https://bettertampakan.org', // Custom domain
   'http://localhost:5173', // Vite dev server
   'http://localhost:8788', // Wrangler dev server
 ];
