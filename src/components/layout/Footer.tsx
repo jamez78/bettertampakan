@@ -3,7 +3,6 @@ import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
 import {
-  SiDiscord,
   SiFacebook,
   SiGithub,
   SiInstagram,
@@ -26,8 +25,6 @@ export const Footer: FC = () => {
         return <SiInstagram className='w-5 h-5' />;
       case 'YouTube':
         return <SiYoutube className='w-5 h-5' />;
-      case 'Discord':
-        return <SiDiscord className='w-5 h-5' />;
       case 'GitHub':
         return <SiGithub className='w-5 h-5' />;
       default:

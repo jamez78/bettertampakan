@@ -18,7 +18,6 @@ import { Navbar } from '@/components/layout/Navbar';
 import { SEO } from '@/components/layout/SEO';
 import { ScrollToTop } from '@/components/layout/ScrollToTop';
 import { SkipLink } from '@/components/layout/SkipLink';
-import Ticker from '@/components/ui/Ticker';
 
 // --- Lazy-loaded Pages ---
 const Home = lazy(() => import('@/pages/Home'));
@@ -26,14 +25,10 @@ const AboutPage = lazy(() => import('@/pages/about'));
 const ContactUs = lazy(() => import('@/pages/ContactUs'));
 const AccessibilityPage = lazy(() => import('@/pages/accessibility'));
 const SearchPage = lazy(() => import('@/pages/Search'));
-const Ideas = lazy(() => import('@/pages/Ideas'));
-const JoinUs = lazy(() => import('@/pages/JoinUs'));
 const TermsOfService = lazy(() => import('@/pages/TermsOfService'));
 const SitemapPage = lazy(() => import('@/pages/sitemap'));
-const Discord = lazy(() => import('@/pages/Discord'));
 
 // Data Utilities
-const ForexPage = lazy(() => import('@/pages/data/forex'));
 
 // Services Module
 const ServicesLayout = lazy(() => import('@/pages/services/layout'));
@@ -165,7 +160,6 @@ function AppContent() {
         </div>
       )}
       {!isAdminRoute && <Navbar />}
-      {!isAdminRoute && <Ticker />}
       <ScrollToTop />
 
       <main id='main-content' className='flex-1'>
@@ -177,14 +171,10 @@ function AppContent() {
             <Route path='/contact' element={<ContactUs />} />
             <Route path='/accessibility' element={<AccessibilityPage />} />
             <Route path='/search' element={<SearchPage />} />
-            <Route path='/ideas' element={<Ideas />} />
-            <Route path='/join-us' element={<JoinUs />} />
             <Route path='/terms-of-service' element={<TermsOfService />} />
             <Route path='/sitemap' element={<SitemapPage />} />
-            <Route path='/discord' element={<Discord />} />
 
             {/* Data Utilities */}
-            <Route path='/data/forex' element={<ForexPage />} />
 
             {/* Services Module */}
             <Route path='/services' element={<ServicesLayout />}>

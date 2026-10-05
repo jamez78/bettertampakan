@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/Badge';
 import { CardGrid } from '@/components/ui/Card';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { config } from '@/lib/lguConfig';
-import { filterServices } from '@/lib/services';
+import { filterServices, getMergedServices } from '@/lib/services';
 
 import ServiceCard from './components/ServiceCard';
 import FilterBar from './components/FilterBar';
@@ -79,13 +79,20 @@ export default function ServicesPage() {
   }, [handleLoadMore]);
 
   // 3. EMPTY STATE
+  const hasAnyServices = getMergedServices().length > 0;
   if (filteredServices.length === 0) {
     return (
       <EmptyState
         icon={SearchXIcon}
-        title='No services found'
+        title={
+          hasAnyServices
+            ? 'No services found'
+            : 'Service guides are being prepared.'
+        }
         message={
-          "We couldn't find any services matching your filters. Try adjusting your search or filters."
+          hasAnyServices
+            ? "We couldn't find any services matching your filters. Try adjusting your search or filters."
+            : 'Guides to municipal services will be added here as they are written.'
         }
         actionHref={`${config.portal.githubUrl}/issues/new?template=contribution.yml`}
         actionLabel='Suggest New Service'

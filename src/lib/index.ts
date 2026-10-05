@@ -19,7 +19,6 @@ export * from './budgetUtils';
 // Domain-specific utilities
 export * from './lgu';
 export * from './weather';
-export * from './forex';
 
 // UI & Display utilities
 export * from './officeIcons';

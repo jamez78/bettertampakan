@@ -6,7 +6,6 @@ import {
   Briefcase,
   Building2,
   ChevronRight,
-  FileCheck,
   FileText,
   Globe,
   Home,
@@ -272,17 +271,6 @@ const SitemapPage: FC = () => {
           title: 'Special Work Permit',
           url: '/travel/visa-types/swp-c',
           description: 'Information about Special Work Permits',
-        },
-      ],
-    },
-    {
-      title: 'Data Services',
-      icon: <FileCheck className='w-5 h-5' />,
-      links: [
-        {
-          title: 'Foreign Exchange Rates',
-          url: '/data/forex',
-          description: 'Current foreign exchange rates',
         },
       ],
     },

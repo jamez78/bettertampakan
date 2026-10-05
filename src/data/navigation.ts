@@ -177,11 +177,6 @@ export const footerNavigation = {
       target: '_blank',
     },
     {
-      label: 'Discord',
-      href: config.portal.discordUrl,
-      target: '_blank',
-    },
-    {
       label: 'GitHub',
       href: config.portal.githubUrl,
       target: '_blank',

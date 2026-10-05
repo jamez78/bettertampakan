@@ -33,7 +33,6 @@ export { EmptyState } from './EmptyState';
 export { PaginationControls } from './Pagination';
 export { ScrollArea } from './ScrollArea';
 export { Timeline } from './Timeline';
-export { default as Ticker } from './Ticker';
 export {
   CardSkeleton,
   DirectoryGridSkeleton,

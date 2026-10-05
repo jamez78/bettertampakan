@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from 'react';
 
 import { Button } from '@bettergov/kapwa/button';
 import {
-  BarChart3,
   Briefcase,
   Building2,
   Download,
@@ -58,7 +57,6 @@ export default function ProcurementPage() {
   // Constants
   const ORG_NAME = config.transparency.procurement.organizationName;
   const ORG_FILTER = `organization_name = "${ORG_NAME}"`;
-  const orgDashboardUrl = `${config.transparency.procurement.externalDashboard}${encodeURIComponent(ORG_NAME)}`;
 
   // Helper function to get badge variant based on award status
   const getAwardStatusBadgeVariant = (
@@ -315,7 +313,7 @@ export default function ProcurementPage() {
       ) : results.length === 0 ? (
         <EmptyState
           title='No Records Found'
-          message='Try adjusting your search terms.'
+          message={`No procurement records for ${lguLabels.name} have been loaded yet.`}
           icon={Search}
         />
       ) : (
@@ -413,32 +411,6 @@ export default function ProcurementPage() {
 
       {/* --- EXTERNAL LINKS FOOTER --- */}
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
-        {/* Link 1: Local Analytics */}
-        <div className='hover:border-kapwa-border-brand border-kapwa-border-weak bg-kapwa-bg-surface flex h-full flex-col justify-between rounded-xl border p-6 shadow-sm transition-all'>
-          <div className='mb-4 flex items-start gap-4'>
-            <div className='bg-kapwa-blue-50 text-kapwa-blue-600 shrink-0 rounded-xl p-3'>
-              <BarChart3 className='h-6 w-6' />
-            </div>
-            <div>
-              <h4 className='text-kapwa-text-strong mb-1 font-bold'>
-                Advanced Analytics
-              </h4>
-              <p className='text-kapwa-text-disabled text-xs leading-relaxed'>
-                View detailed spending charts, top supplier breakdowns, and
-                historical procurement trends for {lguLabels.name}.
-              </p>
-            </div>
-          </div>
-          <a
-            href={orgDashboardUrl}
-            target='_blank'
-            rel='noreferrer'
-            className='text-kapwa-text-inverse bg-kapwa-brand-600 hover:bg-kapwa-brand-700 inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-xs font-bold transition-colors'
-          >
-            View {lguLabels.name} Charts <ExternalLink className='h-3 w-3' />
-          </a>
-        </div>
-
         {/* Link 2: National Comparison */}
         <div className='hover:border-kapwa-border-brand border-kapwa-border-weak bg-kapwa-bg-surface flex h-full flex-col justify-between rounded-xl border p-6 shadow-sm transition-all'>
           <div className='mb-4 flex items-start gap-4'>

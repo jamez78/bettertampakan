@@ -54,10 +54,10 @@ export const Navbar: FC = () => {
         <div className='container px-4 mx-auto'>
           <div className='flex gap-3 justify-end items-center h-10 sm:gap-4 md:gap-6'>
             <Link
-              to='/join-us'
+              to='/contribute'
               className='text-kapwa-text-brand hover:text-kapwa-text-link-hover hidden text-[10px] font-bold tracking-widest whitespace-nowrap uppercase md:inline-flex md:text-xs'
             >
-              🚀 Join Us
+              Suggest a correction
             </Link>
             <Link
               to='/about'
@@ -276,11 +276,11 @@ export const Navbar: FC = () => {
             {/* Mobile-only additional links */}
             <div className='pt-4 mt-4 space-y-1 border-t border-kapwa-border-weak'>
               <Link
-                to='/join-us'
+                to='/contribute'
                 onClick={closeMenu}
                 className='block p-4 text-xs font-black tracking-widest uppercase text-kapwa-text-brand'
               >
-                🚀 Join the Revolution
+                Suggest a correction
               </Link>
               <Link
                 to='/about'

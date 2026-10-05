@@ -9,7 +9,7 @@ import {
   Shield,
 } from 'lucide-react';
 
-import { config } from '@/lib/lguConfig';
+import { PortalContactLink } from '@/components/ui/PortalContactLink';
 import { SEO } from '@/components/layout/SEO';
 
 const TermsOfService: FC = () => {
@@ -336,12 +336,7 @@ const TermsOfService: FC = () => {
                   <Mail className='text-kapwa-text-brand h-5 w-5' />
                   <p className='font-semibold'>
                     Please contact us at:{' '}
-                    <a
-                      href={`mailto:${config.portal.contactEmail}`}
-                      className='text-kapwa-text-brand hover:text-kapwa-text-brand'
-                    >
-                      {config.portal.contactEmail}
-                    </a>
+                    <PortalContactLink className='text-kapwa-text-brand hover:text-kapwa-text-brand underline' />
                   </p>
                 </div>
 
@@ -399,12 +394,7 @@ const TermsOfService: FC = () => {
                 For questions about these terms or content concerns, contact:
               </p>
               <p className='text-kapwa-text-brand-bold text-xl font-semibold'>
-                <a
-                  href='mailto:volunteers@bettergov.ph'
-                  className='hover:text-kapwa-text-brand transition-colors'
-                >
-                  volunteers@bettergov.ph
-                </a>
+                <PortalContactLink className='hover:text-kapwa-text-brand underline transition-colors' />
               </p>
               <p className='text-kapwa-text-brand-bold mt-4 italic'>
                 This website provides public domain information for educational

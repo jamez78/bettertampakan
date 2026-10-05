@@ -19,6 +19,7 @@ import {
   SectionBlock,
 } from '@/components/layout';
 import { SEO } from '@/components/layout/SEO';
+import { PortalContactLink } from '@/components/ui/PortalContactLink';
 import { config } from '@/lib/lguConfig';
 
 const AccessibilityPage: FC = () => {
@@ -287,18 +288,13 @@ const AccessibilityPage: FC = () => {
               <div className='mb-4 flex items-center'>
                 <MailIcon className='text-kapwa-text-brand mr-3 h-6 w-6' />
                 <h3 className='text-kapwa-text-strong text-lg font-semibold'>
-                  Email
+                  Contact
                 </h3>
               </div>
               <p className='text-kapwa-text-support mb-3'>
                 Accessibility feedback and accommodation requests.
               </p>
-              <a
-                href={`mailto:${config.portal.contactEmail}`}
-                className='text-kapwa-text-brand hover:text-kapwa-text-brand font-medium'
-              >
-                {config.portal.contactEmail}
-              </a>
+              <PortalContactLink className='text-kapwa-text-brand hover:text-kapwa-text-brand font-medium underline' />
             </div>
           </div>
         </SectionBlock>
