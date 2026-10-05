@@ -82,7 +82,7 @@ const CoveragePage: FC = () => {
             </div>
 
             <Group
-              title='Confirmed from official sources'
+              title='Confirmed from published sources'
               intro='These come from official publications or from more than one independent published source.'
               icon={<CheckCircle2 className='text-kapwa-text-success h-5 w-5' />}
               items={confirmed}

@@ -9,8 +9,6 @@
     "searchPlaceholder": "Maghanap ng serbisyo...",
     "searchLabel": "Maghanap ng mga serbisyo ng pamahalaan",
     "noResults": "Walang tumugmang serbisyo.",
-    "financialReports": "Mga Ulat Pinansyal",
-    "financialReportsDesc": "Badyet at pahayag ng kita",
     "infrastructure": "Imprastraktura",
     "infrastructureDesc": "Subaybayan ang mga proyektong munisipal",
     "legislation": "Lehislasyon",
@@ -18,7 +16,9 @@
     "government": "Pamahalaan",
     "governmentDesc": "Mga opisyal at departamento",
     "statistics": "Istatistika",
-    "statisticsDesc": "Populasyon at demograpiya"
+    "statisticsDesc": "Populasyon at demograpiya",
+    "barangays": "Mga Barangay",
+    "barangaysDesc": "Mga opisyal at profile"
   },
   "services": {
     "title": "Mga Sikat na Serbisyo",

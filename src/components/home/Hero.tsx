@@ -6,9 +6,9 @@ import Fuse from 'fuse.js';
 import {
   BarChart3Icon,
   BuildingIcon,
-  DollarSignIcon,
   FileTextIcon,
   GavelIcon,
+  HomeIcon,
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -108,18 +108,6 @@ const Hero: FC = () => {
 
   // Quick access cards for key sections (respect feature flags)
   const quickAccessCards: QuickAccessCard[] = [
-    {
-      title: t('hero.financialReports'),
-      description: t('hero.financialReportsDesc'),
-      to: '/transparency/financial',
-      icon: <DollarSignIcon className='w-6 h-6' />,
-    },
-    {
-      title: t('hero.infrastructure'),
-      description: t('hero.infrastructureDesc'),
-      to: '/transparency/infrastructure',
-      icon: <BuildingIcon className='w-6 h-6' />,
-    },
     config.features.openLGU
       ? {
           title: t('hero.legislation'),
@@ -134,10 +122,22 @@ const Hero: FC = () => {
           icon: <GavelIcon className='w-6 h-6' />,
         },
     {
+      title: t('hero.barangays'),
+      description: t('hero.barangaysDesc'),
+      to: '/government/barangays',
+      icon: <HomeIcon className='w-6 h-6' />,
+    },
+    {
       title: t('hero.statistics'),
       description: t('hero.statisticsDesc'),
       to: '/statistics',
       icon: <BarChart3Icon className='w-6 h-6' />,
+    },
+    {
+      title: t('hero.infrastructure'),
+      description: t('hero.infrastructureDesc'),
+      to: '/transparency/infrastructure',
+      icon: <BuildingIcon className='w-6 h-6' />,
     },
   ];
 

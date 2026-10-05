@@ -9,8 +9,6 @@
     "searchPlaceholder": "Search services...",
     "searchLabel": "Search government services",
     "noResults": "No matching services.",
-    "financialReports": "Financial Reports",
-    "financialReportsDesc": "Budget & income statements",
     "infrastructure": "Infrastructure",
     "infrastructureDesc": "Track municipal projects",
     "legislation": "Legislation",
@@ -18,7 +16,9 @@
     "government": "Government",
     "governmentDesc": "Officials & departments",
     "statistics": "Statistics",
-    "statisticsDesc": "Population & demographics"
+    "statisticsDesc": "Population & demographics",
+    "barangays": "Barangays",
+    "barangaysDesc": "Officials & profiles"
   },
   "services": {
     "title": "Popular Services",
