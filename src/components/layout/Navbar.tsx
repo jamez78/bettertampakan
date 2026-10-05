@@ -71,8 +71,8 @@ export const Navbar: FC = () => {
               rel='noreferrer'
               className='hover:text-kapwa-text-brand inline-flex text-[9px] font-bold tracking-widest whitespace-nowrap text-kapwa-text-support uppercase sm:text-[10px] md:text-xs'
             >
-              <span className='inline sm:hidden'>Gov.ph</span>
-              <span className='hidden sm:inline'>Official Gov.ph</span>
+              <span className='inline sm:hidden'>LGU Facebook</span>
+              <span className='hidden sm:inline'>LGU Facebook</span>
             </a>
             <Link
               to={`https://hotlines.bettergov.ph/?city=${encodeURIComponent(config.lgu.name)}&province=${encodeURIComponent(config.lgu.province)}`}
