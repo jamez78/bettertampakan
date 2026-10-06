@@ -108,41 +108,6 @@ export const footerNavigation = {
       ],
     },
     {
-      title: 'BetterGov Network',
-      links: [
-        {
-          label: 'Transparency Portal',
-          href: 'https://transparency.bettergov.ph',
-          target: '_blank',
-        },
-        {
-          label: 'Open Data Portal',
-          href: 'https://data.bettergov.ph',
-          target: '_blank',
-        },
-        {
-          label: 'Petitions PH',
-          href: 'https://petition.ph',
-          target: '_blank',
-        },
-        {
-          label: 'SALN Tracker',
-          href: 'https://saln.bettergov.ph',
-          target: '_blank',
-        },
-        {
-          label: 'Budget Tracker',
-          href: 'https://budget.bettergov.ph',
-          target: '_blank',
-        },
-        {
-          label: 'Philgeps Tracker',
-          href: 'https://philgeps.bettergov.ph',
-          target: '_blank',
-        },
-      ],
-    },
-    {
       title: 'Resources',
       links: [
         {
@@ -163,6 +128,21 @@ export const footerNavigation = {
         {
           label: `Province of ${config.lgu.province}`,
           href: config.lgu.provinceWebsite,
+          target: '_blank',
+        },
+        {
+          label: 'Philippine Statistics Authority',
+          href: 'https://psa.gov.ph',
+          target: '_blank',
+        },
+        {
+          label: 'BetterGov.ph',
+          href: 'https://bettergov.ph',
+          target: '_blank',
+        },
+        {
+          label: 'Other LGU portals',
+          href: 'https://lgu.bettergov.ph',
           target: '_blank',
         },
         // { label: 'Privacy Policy', href: '/privacy' },
