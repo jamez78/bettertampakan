@@ -131,7 +131,7 @@ export default function WeatherMapSection() {
           <div className='flex w-full flex-col overflow-hidden rounded-xl shadow-sm hover:shadow-md '>
             <div
               id='map-container'
-              className='h-64 w-full md:flex-1'
+              className='h-64 w-full md:h-96'
               role='application'
               aria-label={`Interactive map of ${MARKER_LABEL}`}
             >
