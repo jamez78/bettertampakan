@@ -6,17 +6,26 @@ import {
   MailIcon,
   PencilLineIcon,
   PhoneIcon,
+  SirenIcon,
 } from 'lucide-react';
 
 import { SEO } from '@/components/layout/SEO';
 
 import { config } from '@/lib/lguConfig';
 
+import localHotlines from '@/data/directory/local-hotlines.json';
+
 const CORRECTION_FORM_URL = `${config.portal.githubUrl}/issues/new?template=contribution.yml`;
 
 // Contact details of the Municipal Government of Tampakan, not of this portal.
 const LGU_PHONE = '(083) 227-1001';
 const LGU_EMAIL = 'lgutampakan2019@gmail.com';
+
+// "0938-999-7905" -> "+639389997905", "(083) 227-1080" -> "+63832271080", "169" -> "169"
+const toTelHref = (number: string) => {
+  const digits = number.replace(/\D/g, '');
+  return digits.startsWith('0') ? `tel:+63${digits.slice(1)}` : `tel:${digits}`;
+};
 
 const ContactUs: FC = () => {
   return (
@@ -50,6 +59,39 @@ const ContactUs: FC = () => {
             >
               Open the correction form <ExternalLink className='h-4 w-4' />
             </a>
+          </section>
+
+          <section className='border-kapwa-border-weak bg-kapwa-bg-surface rounded-lg border p-6 shadow-xs'>
+            <h2 className='text-kapwa-text-strong mb-2 flex items-center gap-2 text-xl font-bold'>
+              <SirenIcon className='text-kapwa-text-danger h-5 w-5' />
+              Emergency hotlines in {config.lgu.name}
+            </h2>
+            <p className='text-kapwa-text-support mb-4 leading-relaxed'>
+              For any emergency you can also call 911. These local numbers are
+              from the emergency hotlines card published by the{' '}
+              {config.lgu.fullName}.
+            </p>
+            <ul className='grid gap-4 sm:grid-cols-2'>
+              {localHotlines.hotlines.map(hotline => (
+                <li key={hotline.name}>
+                  <span className='text-kapwa-text-strong block font-bold'>
+                    {hotline.name}
+                  </span>
+                  <span className='flex flex-wrap gap-x-4 gap-y-1'>
+                    {hotline.numbers.map(number => (
+                      <a
+                        key={number}
+                        href={toTelHref(number)}
+                        className='text-kapwa-text-brand inline-flex min-h-[32px] items-center gap-1 underline hover:opacity-80'
+                      >
+                        <PhoneIcon className='h-3.5 w-3.5' />
+                        {number}
+                      </a>
+                    ))}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </section>
 
           <section className='border-kapwa-border-weak bg-kapwa-bg-surface rounded-lg border p-6 shadow-xs'>
