@@ -16,6 +16,8 @@ const confirmed = [
   'The number and names of the 14 barangays, and the 1st income class (PSA Philippine Standard Geographic Code).',
   'The municipal hall address, telephone number, email address and Facebook page of the LGU.',
   'The names of the Mayor and Vice Mayor, each named in more than one published source.',
+  "Local emergency hotlines for fire, rescue, police, hospital and health office (the LGU's published emergency hotlines card).",
+  "The Municipal Assessor (LGU Facebook announcement of new appointments, October 2026).",
 ];
 
 const notYetConfirmed = [
@@ -28,7 +30,7 @@ const notYetConfirmed = [
 
 const notYetAvailable = [
   'Service guides: requirements, fees and processing times.',
-  'Municipal departments and offices, with their heads and contact numbers.',
+  'Most municipal departments and offices, with their heads and contact numbers. Three offices are listed so far.',
   'Sangguniang Bayan standing committees.',
   'Barangay hall addresses, phone numbers and kagawad lists.',
   'Barangay populations for census years before 2024.',
@@ -36,7 +38,7 @@ const notYetAvailable = [
   'Financial reports and procurement records.',
   'Ordinances and resolutions.',
   'Local history.',
-  'Local emergency numbers and weather.',
+  'Weather.',
 ];
 
 const Group: FC<{

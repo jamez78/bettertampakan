@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "slug": "municipal-assessors-office",
+    "office_name": "Municipal Assessor's Office",
+    "address": null,
+    "trunkline": null,
+    "website": null,
+    "email": null,
+    "department_head": {
+      "name": "Zeneth G. Sinday",
+      "contact": null,
+      "email": null
+    }
+  },
+  {
+    "slug": "mdrrmo",
+    "office_name": "Municipal Disaster Risk Reduction and Management Office (MDRRMO) / Tampakan Rescue Unit",
+    "address": null,
+    "trunkline": ["0931-239-2064", "(083) 227-1146"],
+    "website": null,
+    "email": null,
+    "department_head": null
+  },
+  {
+    "slug": "municipal-health-office",
+    "office_name": "Municipal Health Office / Rural Health Unit",
+    "address": null,
+    "trunkline": ["0967-043-0803", "(083) 227-1008", "(083) 553-7180"],
+    "website": null,
+    "email": null,
+    "department_head": null
+  }
+]

@@ -45,6 +45,16 @@ const glanceFigures = [
 const urgentContacts = [
   { label: 'Emergency', display: '911', href: 'tel:911' },
   {
+    label: 'Rescue (MDRRMO)',
+    display: '0931-239-2064',
+    href: 'tel:+639312392064',
+  },
+  {
+    label: 'Police',
+    display: '0928-451-1059',
+    href: 'tel:+639284511059',
+  },
+  {
     label: 'Municipal Hall',
     display: '(083) 227-1001',
     href: 'tel:+63832271001',
@@ -144,7 +154,10 @@ export default function HomeEssentials() {
             ))}
           </ul>
           <p className='text-kapwa-text-support mt-3 text-xs'>
-            Local emergency numbers will be added once confirmed with the LGU.
+            <Link to='/contact' className='text-kapwa-text-brand underline'>
+              All local emergency hotlines
+            </Link>{' '}
+            (fire, rescue, police, hospital and health office).
           </p>
         </div>
       </div>

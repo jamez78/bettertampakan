@@ -1,0 +1,29 @@
+{
+  "source": "Municipality of Tampakan Emergency Hotlines card, Municipal Information Office (LGU Facebook page), seen 2026-10-19",
+  "hotlines": [
+    {
+      "name": "Bureau of Fire Protection Tampakan",
+      "numbers": ["0938-999-7905", "(083) 227-1080"]
+    },
+    {
+      "name": "MDRRMO / Tampakan Rescue Unit",
+      "numbers": ["0931-239-2064", "(083) 227-1146"]
+    },
+    {
+      "name": "Tampakan Municipal Police Station",
+      "numbers": ["0928-451-1059", "169"]
+    },
+    {
+      "name": "Tampakan General Hospital",
+      "numbers": ["0953-955-4970"]
+    },
+    {
+      "name": "Municipal Health Office / RHU",
+      "numbers": ["0967-043-0803", "(083) 227-1008", "(083) 553-7180"]
+    },
+    {
+      "name": "RMFB 12 (Regional Mobile Force Battalion)",
+      "numbers": ["0919-215-4012"]
+    }
+  ]
+}
