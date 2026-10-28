@@ -75,7 +75,7 @@ const GovernmentSection: FC = () => {
           </Badge>
           {departmentCount > 0 && (
             <Badge variant='secondary' className='px-4 py-2 text-sm'>
-              {departmentCount} Departments
+              {departmentCount} Offices listed
             </Badge>
           )}
           <Badge variant='slate' className='px-4 py-2 text-sm'>

@@ -23,10 +23,10 @@
   "services": {
     "title": "Mga Sikat na Serbisyo",
     "governmentServices": "Mga Serbisyo ng Pamahalaan",
-    "description": "I-access ang opisyal na mga serbisyo ng pamahalaan nang mabilis at madali. Hanapin ang kailangan para sa pagkamamamayan, negosyo, edukasyon, at iba pa.",
+    "description": "Kapag handa na, ipapaliwanag ng bawat gabay ang mga kinakailangan, bayad at hakbang para sa isang serbisyo ng munisipyo, nakaayos ayon sa mga kategorya sa ibaba.",
     "viewAll": "Tingnan ang Lahat ng Serbisyo",
     "viewAllCategory": "Tingnan ang Mga Serbisyo",
-    "comingSoon": "Service guides are being prepared and will appear here."
+    "comingSoon": "Inihahanda pa ang mga gabay sa serbisyo at lalabas dito."
   },
   "weather": {
     "title": "Mga Update sa Panahon"
@@ -94,7 +94,7 @@
     "electedofficialsDescription": "Ang nahalal na pamumuno ng Sangay na Tagapagpaganap at Tagapagbatas, responsable sa pagpapatupad ng patakaran at paggawa ng batas.",
     "learnMore": "Alamin pa",
     "directoryTitle": "Opisyal na Direktoryo",
-    "directoryDescription": "Maghanap ng impormasyon ng kontak para sa mga opisyal ng pamahalaan, ahensya, at opisina sa pambansa at lokal na antas.",
+    "directoryDescription": "Hanapin ang kontak ng mga halal na opisyal, opisina ng munisipyo at mga barangay ng Tampakan.",
     "viewDirectory": "Tingnan ang Direktoryo"
   },
   "preview": {
