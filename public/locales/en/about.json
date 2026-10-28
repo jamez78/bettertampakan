@@ -7,7 +7,7 @@
   },
   "sources": {
     "title": "Where the information comes from",
-    "body": "We use published public sources: the Philippine Statistics Authority, the Department of Trade and Industry, published election results and local news reports. Every figure is recorded with its source in our <src>sources file</src>. Some entries are still being confirmed with the LGU."
+    "body": "We use published public sources: the Philippine Statistics Authority, the Department of Trade and Industry, published election results, local news reports and <wiki>Wikipedia</wiki>. Every figure is recorded with its source in our <src>sources file</src>. Some entries are still being confirmed with the LGU."
   },
   "corrections": {
     "title": "Corrections are welcome",

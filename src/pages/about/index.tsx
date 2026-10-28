@@ -12,6 +12,7 @@ import { config } from '@/lib/lguConfig';
 
 const SOURCES_URL = `${config.portal.githubUrl}/blob/main/docs/tampakan-baseline.json`;
 const TEMPLATE_URL = 'https://github.com/BetterLosBanos/betterlb';
+const WIKIPEDIA_URL = 'https://en.wikipedia.org/wiki/Tampakan';
 const BETTERGOV_URL = 'https://bettergov.ph';
 const LICENSE_URL = 'https://creativecommons.org/publicdomain/zero/1.0/';
 
@@ -72,7 +73,10 @@ const AboutPage: FC = () => {
                 <Trans
                   t={t}
                   i18nKey='sources.body'
-                  components={{ src: <ExternalLink href={SOURCES_URL} /> }}
+                  components={{
+                    src: <ExternalLink href={SOURCES_URL} />,
+                    wiki: <ExternalLink href={WIKIPEDIA_URL} />,
+                  }}
                 />
               </p>
             </section>
