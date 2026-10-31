@@ -11,7 +11,11 @@
     },
     {
       "name": "Tampakan Municipal Police Station",
-      "numbers": ["0928-451-1059", "169"]
+      "numbers": ["0928-451-1059", "169"],
+      "page": {
+        "label": "Station's Facebook page",
+        "url": "https://www.facebook.com/profile.php?id=100083823576856"
+      }
     },
     {
       "name": "Tampakan General Hospital",

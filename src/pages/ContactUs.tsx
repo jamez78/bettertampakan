@@ -92,6 +92,17 @@ const ContactUs: FC = () => {
                       </a>
                     ))}
                   </span>
+                  {'page' in hotline && hotline.page && (
+                    <a
+                      href={hotline.page.url}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-kapwa-text-support mt-1 inline-flex min-h-[32px] items-center gap-1 text-sm underline hover:opacity-80'
+                    >
+                      <ExternalLink className='h-3.5 w-3.5' />
+                      {hotline.page.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

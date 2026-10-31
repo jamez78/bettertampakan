@@ -84,6 +84,11 @@
       "title": "Department of Tourism graphic 'Community Guides: Name of tour guide (Tampakan)', 17 names (shared by Julius, read 31 Oct 2026; original post and date not recorded)",
       "url": null,
       "type": "primary"
+    },
+    "pnp_tampakan_fb": {
+      "title": "PNP Tampakan Municipal Police Station, Facebook page (cover banner shows hotline 0928-451-1059; page category 'Digital creator' and bio says it is for community information, so it is not described as official by the page itself; read 31 Oct 2026)",
+      "url": "https://www.facebook.com/profile.php?id=100083823576856",
+      "type": "primary, official status unverified"
     }
   },
   "profile": {
@@ -215,7 +220,11 @@
         },
         {
           "name": "Tampakan Municipal Police Station",
-          "numbers": ["0928-451-1059", "169"]
+          "numbers": ["0928-451-1059", "169"],
+          "page": {
+            "label": "Station's Facebook page",
+            "url": "https://www.facebook.com/profile.php?id=100083823576856"
+          }
         },
         {
           "name": "Tampakan General Hospital",
@@ -230,8 +239,9 @@
           "numbers": ["0919-215-4012"]
         }
       ],
-      "sources": ["lgu_hotlines_card"],
-      "status": "confirmed"
+      "sources": ["lgu_hotlines_card", "pnp_tampakan_fb"],
+      "status": "confirmed",
+      "note": "The police hotline 0928-451-1059 is also shown on the station's own Facebook cover banner; the portal links to that page from the police entry."
     }
   },
   "officials": {
