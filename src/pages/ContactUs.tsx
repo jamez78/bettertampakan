@@ -61,7 +61,10 @@ const ContactUs: FC = () => {
             </a>
           </section>
 
-          <section className='border-kapwa-border-weak bg-kapwa-bg-surface rounded-lg border p-6 shadow-xs'>
+          <section
+            id='emergency-hotlines'
+            className='border-kapwa-border-weak bg-kapwa-bg-surface scroll-mt-32 rounded-lg border p-6 shadow-xs'
+          >
             <h2 className='text-kapwa-text-strong mb-2 flex items-center gap-2 text-xl font-bold'>
               <SirenIcon className='text-kapwa-text-danger h-5 w-5' />
               Emergency hotlines in {config.lgu.name}

@@ -154,7 +154,10 @@ export default function HomeEssentials() {
             ))}
           </ul>
           <p className='text-kapwa-text-support mt-3 text-xs'>
-            <Link to='/contact' className='text-kapwa-text-brand underline'>
+            <Link
+              to='/contact#emergency-hotlines'
+              className='text-kapwa-text-brand underline'
+            >
               All local emergency hotlines
             </Link>{' '}
             (fire, rescue, police, hospital and health office).
