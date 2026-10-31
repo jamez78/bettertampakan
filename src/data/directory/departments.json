@@ -40,7 +40,62 @@
     "department_head": {
       "name": "Giovanni A. Montejo",
       "contact": null,
-      "email": null
-    }
+      "email": null,
+      "title": "College Administrator"
+    },
+    "staff": [
+      {
+        "name": "Melvin G. Pomar, DBA",
+        "role": "BSAB Program Head"
+      },
+      {
+        "name": "Hernie B. Deduro, LPT, MIT",
+        "role": "College Registrar"
+      },
+      {
+        "name": "Emilda A. David, RL, LPT, MALS",
+        "role": "College Librarian"
+      },
+      {
+        "name": "Kathleen G. Villarta-Lanaza, RN",
+        "role": "College Nurse"
+      },
+      {
+        "name": "Apple Kyle Kiarra M. Madayag, RPm",
+        "role": "Search and Growth Center (Guidance Advocate)"
+      },
+      {
+        "name": "John Myr C. Sabanal, LPT, RAgri, MAST",
+        "role": "Instructor"
+      },
+      {
+        "name": "Jeff Lloyd O. Santillan, LPT, MAEd",
+        "role": "Instructor"
+      },
+      {
+        "name": "Rachelle Joan M. Torentera, LPT, MAEM",
+        "role": "Instructor"
+      },
+      {
+        "name": "Ralph Michael D. Ursabia, LPT",
+        "role": "Instructor"
+      },
+      {
+        "name": "Juster John Escobillo, LPT, RAgri, MAST",
+        "role": "Part-Time Instructor"
+      },
+      {
+        "name": "Cherry M. Sidon, LPT",
+        "role": "Part-Time Instructor"
+      },
+      {
+        "name": "Jeward T. Cardenas, LPT, MAT",
+        "role": "Part-Time Instructor"
+      },
+      {
+        "name": "Santos C. Macarine, Jr., LPT, MAEd",
+        "role": "Part-Time Instructor"
+      }
+    ]
   }
 ]

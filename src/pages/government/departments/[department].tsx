@@ -175,7 +175,7 @@ export default function DepartmentDetail() {
                     {dept.department_head.name}
                   </h3>
                   <Badge variant='secondary' className='mt-1'>
-                    Department Head
+                    {dept.department_head.title ?? 'Department Head'}
                   </Badge>
                   {dept.department_head.email && (
                     <a
@@ -189,6 +189,44 @@ export default function DepartmentDetail() {
                 </div>
               </div>
             </Card>
+          </div>
+        )}
+
+        {/* Faculty and staff */}
+        {dept.staff && dept.staff.length > 0 && (
+          <div
+            className='space-y-2'
+            role='group'
+            aria-label='Faculty and staff'
+          >
+            <p className='sr-only'>Faculty and staff</p>
+            <p className='text-kapwa-text-disabled pl-1 text-[10px] font-bold tracking-widest uppercase'>
+              Faculty and staff
+            </p>
+            <ul className='grid grid-cols-1 gap-3 md:grid-cols-2'>
+              {dept.staff.map(member => (
+                <li key={member.name}>
+                  <Card hover={false} className='h-full rounded-xl'>
+                    <CardContent className='flex items-center gap-3 p-4'>
+                      <div className='border-kapwa-border-weak text-kapwa-text-disabled bg-kapwa-bg-surface flex h-10 w-10 shrink-0 items-center justify-center rounded-full border'>
+                        <UserIcon className='h-5 w-5' />
+                      </div>
+                      <div className='min-w-0'>
+                        <p className='text-kapwa-text-strong text-sm leading-tight font-bold'>
+                          {member.name}
+                        </p>
+                        <p className='text-kapwa-text-support text-xs'>
+                          {member.role}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </li>
+              ))}
+            </ul>
+            <p className='text-kapwa-text-disabled pl-1 text-xs'>
+              Names and positions as published by the office.
+            </p>
           </div>
         )}
 

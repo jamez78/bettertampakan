@@ -22,9 +22,13 @@
         "oneOf": [
           {
             "type": "array",
-            "items": { "type": ["string", "null"] }
+            "items": {
+              "type": ["string", "null"]
+            }
           },
-          { "type": "null" }
+          {
+            "type": "null"
+          }
         ],
         "description": "Array of phone numbers (items can be null) or null"
       },
@@ -42,16 +46,42 @@
           {
             "type": "object",
             "properties": {
-              "name": { "type": ["string", "null"] },
-              "contact": { "type": ["string", "null"] },
+              "name": {
+                "type": ["string", "null"]
+              },
+              "contact": {
+                "type": ["string", "null"]
+              },
               "email": {
                 "type": ["string", "null"],
                 "format": "email"
+              },
+              "title": {
+                "type": ["string", "null"],
+                "description": "Position shown instead of 'Department Head', e.g. College Administrator"
               }
             }
           },
-          { "type": "null" }
+          {
+            "type": "null"
+          }
         ]
+      },
+      "staff": {
+        "type": "array",
+        "description": "Optional list of staff members: name (with credentials) and position",
+        "items": {
+          "type": "object",
+          "required": ["name", "role"],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            }
+          }
+        }
       }
     }
   }

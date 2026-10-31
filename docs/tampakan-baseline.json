@@ -948,13 +948,72 @@
         "value": "Giovanni A. Montejo, LPT, PhD, EdD (College Administrator)",
         "sources": ["tampakan_cc_fb"],
         "status": "confirmed",
-        "note": "Named on the college's own faculty announcement card. Other faculty and staff on the cards are deliberately not listed."
+        "note": "Named on the college's own faculty announcement card."
       },
       "relationship_to_lgu": {
         "value": null,
         "sources": [],
         "status": "needs_confirmation",
         "note": "Not stated on the college page. Confirm whether the college is run by the Municipal Government before describing it as an LGU office."
+      },
+      "staff": {
+        "value": [
+          {
+            "name": "Melvin G. Pomar, DBA",
+            "role": "BSAB Program Head"
+          },
+          {
+            "name": "Hernie B. Deduro, LPT, MIT",
+            "role": "College Registrar"
+          },
+          {
+            "name": "Emilda A. David, RL, LPT, MALS",
+            "role": "College Librarian"
+          },
+          {
+            "name": "Kathleen G. Villarta-Lanaza, RN",
+            "role": "College Nurse"
+          },
+          {
+            "name": "Apple Kyle Kiarra M. Madayag, RPm",
+            "role": "Search and Growth Center (Guidance Advocate)"
+          },
+          {
+            "name": "John Myr C. Sabanal, LPT, RAgri, MAST",
+            "role": "Instructor"
+          },
+          {
+            "name": "Jeff Lloyd O. Santillan, LPT, MAEd",
+            "role": "Instructor"
+          },
+          {
+            "name": "Rachelle Joan M. Torentera, LPT, MAEM",
+            "role": "Instructor"
+          },
+          {
+            "name": "Ralph Michael D. Ursabia, LPT",
+            "role": "Instructor"
+          },
+          {
+            "name": "Juster John Escobillo, LPT, RAgri, MAST",
+            "role": "Part-Time Instructor"
+          },
+          {
+            "name": "Cherry M. Sidon, LPT",
+            "role": "Part-Time Instructor"
+          },
+          {
+            "name": "Jeward T. Cardenas, LPT, MAT",
+            "role": "Part-Time Instructor"
+          },
+          {
+            "name": "Santos C. Macarine, Jr., LPT, MAEd",
+            "role": "Part-Time Instructor"
+          }
+        ],
+        "sources": ["tampakan_cc_fb"],
+        "status": "confirmed",
+        "note": "Names, credentials and positions as printed on the college's faculty announcement cards (read 31 Oct 2026). Education history and photos on the cards are deliberately not reproduced. The cards may not cover every staff member."
       }
     }
   ]

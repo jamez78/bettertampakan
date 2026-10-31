@@ -81,7 +81,7 @@ export default function DepartmentsIndex() {
                       </div>
                       <div className='min-w-0'>
                         <p className='text-kapwa-text-disabled mb-0.5 text-[9px] leading-none font-bold tracking-tighter uppercase'>
-                          Department Head
+                          {dept.department_head.title ?? 'Department Head'}
                         </p>
                         <p className='text-kapwa-text-support truncate text-xs leading-tight font-bold'>
                           {toTitleCase(dept.department_head.name)}
