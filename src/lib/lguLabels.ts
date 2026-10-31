@@ -49,3 +49,14 @@ export const lguLabels = {
   /** "{name}, {province}" e.g. "Los Baños, Laguna" */
   location: `${config.lgu.name}, ${config.lgu.province}`,
 };
+
+/**
+ * Append "{name}, {province}" to an address unless the address already
+ * names the LGU, so data that includes the location is not shown twice.
+ */
+export function withLocation(address: string): string {
+  const alreadyNamed = address
+    .toLowerCase()
+    .includes(config.lgu.name.toLowerCase());
+  return alreadyNamed ? address : `${address}, ${lguLabels.location}`;
+}

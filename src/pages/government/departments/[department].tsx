@@ -23,7 +23,7 @@ import { Card, CardContent } from '@/components/ui/Card';
 
 import { toTitleCase } from '@/lib/stringUtils';
 import { toTelUri } from '@/lib/utils';
-import { lguLabels } from '@/lib/lguLabels';
+import { withLocation } from '@/lib/lguLabels';
 
 import departmentsData from '@/data/directory/departments.json';
 import mergedServicesData from '@/data/citizens-charter/merged-services.json';
@@ -114,7 +114,7 @@ export default function DepartmentDetail() {
         {/* Middle: Address */}
         {dept.address && (
           <p className='text-kapwa-text-support mb-4 text-sm'>
-            {dept.address}, {lguLabels.location}
+            {withLocation(dept.address)}
           </p>
         )}
 

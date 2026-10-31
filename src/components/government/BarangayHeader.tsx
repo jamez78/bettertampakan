@@ -3,7 +3,7 @@ import { GlobeIcon, MapPinIcon, PhoneIcon } from 'lucide-react';
 import { Badge } from '@/components/ui/Badge';
 
 import { toTitleCase } from '@/lib/stringUtils';
-import { lguLabels } from '@/lib/lguLabels';
+import { withLocation } from '@/lib/lguLabels';
 
 interface BarangayHeaderProps {
   barangay: {
@@ -45,7 +45,7 @@ export function BarangayHeader({ barangay }: BarangayHeaderProps) {
       {/* Middle: Address */}
       {barangay.address && (
         <p className='text-kapwa-text-support mb-4 text-sm'>
-          {barangay.address}, {lguLabels.location}
+          {withLocation(barangay.address)}
         </p>
       )}
 
