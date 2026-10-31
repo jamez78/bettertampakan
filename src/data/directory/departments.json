@@ -105,6 +105,65 @@
     "trunkline": ["0946-479-8421"],
     "website": "https://www.facebook.com/profile.php?id=100088410064330",
     "email": "tampakantourism@gmail.com",
-    "department_head": null
+    "department_head": null,
+    "sections": [
+      {
+        "title": "Accredited community guides",
+        "note": "DOT-accredited community guides of Tampakan, as listed on a Department of Tourism graphic. The Municipal Tourism Office announced the first batch on 29 June and asks travellers and tour operators to coordinate tour bookings with the guides' association.",
+        "members": [
+          {
+            "name": "John Ryan Virgo Silvino"
+          },
+          {
+            "name": "Jenny Paguia Paelmocon"
+          },
+          {
+            "name": "John Win Cortez Pesidas"
+          },
+          {
+            "name": "Revelyn Berame Pason"
+          },
+          {
+            "name": "Hamir John Kenn Labargan Palec"
+          },
+          {
+            "name": "Raymond Jacob Hernando Carillo"
+          },
+          {
+            "name": "Antony Morados Rodriguez"
+          },
+          {
+            "name": "Marianne Sebios Janiola"
+          },
+          {
+            "name": "Reginaldo Francisco Benitez Jr."
+          },
+          {
+            "name": "Francis Villarta Kenezo"
+          },
+          {
+            "name": "Ruel Calonce Gloria"
+          },
+          {
+            "name": "Dante Amora Mazo"
+          },
+          {
+            "name": "Laurence Taculod Montejo"
+          },
+          {
+            "name": "Cristobal Catil Masamloc"
+          },
+          {
+            "name": "Ronalyn Sen Josue"
+          },
+          {
+            "name": "Dayline Ferolino Seno"
+          },
+          {
+            "name": "Arnel Disca"
+          }
+        ]
+      }
+    ]
   }
 ]

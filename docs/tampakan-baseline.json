@@ -79,6 +79,11 @@
       "title": "Tampakan Municipal Tourism Office, South Cotabato, Facebook page (describes itself as the official page of LGU Tampakan Tourism; read 31 Oct 2026)",
       "url": "https://www.facebook.com/profile.php?id=100088410064330",
       "type": "primary"
+    },
+    "dot_community_guides": {
+      "title": "Department of Tourism graphic 'Community Guides: Name of tour guide (Tampakan)', 17 names (shared by Julius, read 31 Oct 2026; original post and date not recorded)",
+      "url": null,
+      "type": "primary"
     }
   },
   "profile": {
@@ -1050,6 +1055,30 @@
         "sources": [],
         "status": "needs_confirmation",
         "note": "No head named on the page. Ask the Municipal Tourism Office."
+      },
+      "accredited_community_guides": {
+        "value": [
+          "John Ryan Virgo Silvino",
+          "Jenny Paguia Paelmocon",
+          "John Win Cortez Pesidas",
+          "Revelyn Berame Pason",
+          "Hamir John Kenn Labargan Palec",
+          "Raymond Jacob Hernando Carillo",
+          "Antony Morados Rodriguez",
+          "Marianne Sebios Janiola",
+          "Reginaldo Francisco Benitez Jr.",
+          "Francis Villarta Kenezo",
+          "Ruel Calonce Gloria",
+          "Dante Amora Mazo",
+          "Laurence Taculod Montejo",
+          "Cristobal Catil Masamloc",
+          "Ronalyn Sen Josue",
+          "Dayline Ferolino Seno",
+          "Arnel Disca"
+        ],
+        "sources": ["dot_community_guides", "tampakan_tourism_fb"],
+        "status": "needs_confirmation",
+        "note": "Names exactly as listed on the graphic; the Municipal Tourism Office's 29 June post announces the first batch of DOT-accredited guides. The graphic's date and original post are not recorded, so check the current accreditation list with the Tourism Office. No contact details are published for individual guides; bookings go through the guides' association."
       }
     }
   ]

@@ -26,6 +26,12 @@ import { toTelUri } from '@/lib/utils';
 import { withLocation } from '@/lib/lguLabels';
 
 import departmentsData from '@/data/directory/departments.json';
+
+interface PeopleSection {
+  title: string;
+  note?: string | null;
+  members: { name: string; role?: string | null }[];
+}
 import mergedServicesData from '@/data/citizens-charter/merged-services.json';
 
 export default function DepartmentDetail() {
@@ -54,6 +60,19 @@ export default function DepartmentDetail() {
         Office Not Found
       </div>
     );
+
+  const peopleSections: PeopleSection[] = [
+    ...(dept.staff && dept.staff.length > 0
+      ? [
+          {
+            title: 'Faculty and staff',
+            note: 'Names and positions as published by the office.',
+            members: dept.staff,
+          },
+        ]
+      : []),
+    ...(dept.sections ?? []),
+  ];
 
   const contactValue = Array.isArray(dept.trunkline)
     ? dept.trunkline[0]
@@ -192,20 +211,21 @@ export default function DepartmentDetail() {
           </div>
         )}
 
-        {/* Faculty and staff */}
-        {dept.staff && dept.staff.length > 0 && (
+        {/* Named lists of people: staff and other sections */}
+        {peopleSections.map(section => (
           <div
+            key={section.title}
             className='space-y-2'
             role='group'
-            aria-label='Faculty and staff'
+            aria-label={section.title}
           >
-            <p className='sr-only'>Faculty and staff</p>
+            <p className='sr-only'>{section.title}</p>
             <p className='text-kapwa-text-disabled pl-1 text-[10px] font-bold tracking-widest uppercase'>
-              Faculty and staff
+              {section.title}
             </p>
             <ul className='grid grid-cols-1 gap-3 md:grid-cols-2'>
-              {dept.staff.map(member => (
-                <li key={member.name}>
+              {section.members.map(member => (
+                <li key={`${section.title}-${member.name}`}>
                   <Card hover={false} className='h-full rounded-xl'>
                     <CardContent className='flex items-center gap-3 p-4'>
                       <div className='border-kapwa-border-weak text-kapwa-text-disabled bg-kapwa-bg-surface flex h-10 w-10 shrink-0 items-center justify-center rounded-full border'>
@@ -215,20 +235,24 @@ export default function DepartmentDetail() {
                         <p className='text-kapwa-text-strong text-sm leading-tight font-bold'>
                           {member.name}
                         </p>
-                        <p className='text-kapwa-text-support text-xs'>
-                          {member.role}
-                        </p>
+                        {member.role && (
+                          <p className='text-kapwa-text-support text-xs'>
+                            {member.role}
+                          </p>
+                        )}
                       </div>
                     </CardContent>
                   </Card>
                 </li>
               ))}
             </ul>
-            <p className='text-kapwa-text-disabled pl-1 text-xs'>
-              Names and positions as published by the office.
-            </p>
+            {section.note && (
+              <p className='text-kapwa-text-disabled pl-1 text-xs'>
+                {section.note}
+              </p>
+            )}
           </div>
-        )}
+        ))}
 
         {/* Department Services */}
         {associatedServices.length > 0 && (

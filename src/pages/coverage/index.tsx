@@ -26,6 +26,7 @@ const notYetConfirmed = [
   'The Punong Barangay of each of the 14 barangays.',
   'SK Chairpersons. For Barangay Buto and Barangay Santa Cruz the SK Chairperson is not yet confirmed.',
   'Tampakan Community College, which is listed with the contact details and the faculty and staff names and positions published on its own Facebook page; its relationship to the Municipal Government is not yet confirmed.',
+  'The list of accredited community guides, which comes from a Department of Tourism graphic and has not been checked against the official accreditation list.',
   'The map marker, which shows the approximate town centre and not a surveyed location.',
 ];
 

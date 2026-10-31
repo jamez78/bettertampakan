@@ -82,6 +82,37 @@
             }
           }
         }
+      },
+      "sections": {
+        "type": "array",
+        "description": "Optional named lists of people shown on the office page (for example accredited guides)",
+        "items": {
+          "type": "object",
+          "required": ["title", "members"],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "note": {
+              "type": ["string", "null"]
+            },
+            "members": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["name"],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "type": ["string", "null"]
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
