@@ -25,12 +25,13 @@ const notYetConfirmed = [
   'The ex-officio Sangguniang Bayan members: the Liga ng mga Barangay representative, the Indigenous Peoples Mandatory Representative and the SK Federation President.',
   'The Punong Barangay of each of the 14 barangays.',
   'SK Chairpersons. For Barangay Buto and Barangay Santa Cruz the SK Chairperson is not yet confirmed.',
+  'Tampakan Community College, which is listed with the contact details published on its own Facebook page; its relationship to the Municipal Government is not yet confirmed.',
   'The map marker, which shows the approximate town centre and not a surveyed location.',
 ];
 
 const notYetAvailable = [
   'Service guides: requirements, fees and processing times.',
-  'Most municipal departments and offices, with their heads and contact numbers. Three offices are listed so far.',
+  'Most municipal departments and offices, with their heads and contact numbers. Only a few entries are listed so far.',
   'Sangguniang Bayan standing committees.',
   'Barangay hall addresses, phone numbers and kagawad lists.',
   'Barangay populations for census years before 2024.',

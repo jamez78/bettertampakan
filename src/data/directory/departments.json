@@ -29,5 +29,18 @@
     "website": null,
     "email": null,
     "department_head": null
+  },
+  {
+    "slug": "tampakan-community-college",
+    "office_name": "Tampakan Community College",
+    "address": "Purok Mainuswagon, Brgy. Poblacion",
+    "trunkline": null,
+    "website": "https://www.facebook.com/tampakancommunitycollege",
+    "email": "tampakancommunitycollege2026@gmail.com",
+    "department_head": {
+      "name": "Giovanni A. Montejo",
+      "contact": null,
+      "email": null
+    }
   }
 ]

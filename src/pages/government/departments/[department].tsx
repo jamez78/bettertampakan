@@ -238,19 +238,17 @@ export default function DepartmentDetail() {
         )}
 
         {/* Office Mandate */}
-        <div className='space-y-2' role='group' aria-label='Office Mandate'>
-          <p className='sr-only'>Office Mandate</p>
+        <div className='space-y-2' role='group' aria-label='About this listing'>
+          <p className='sr-only'>About this listing</p>
           <p className='text-kapwa-text-disabled pl-1 text-[10px] font-bold tracking-widest uppercase'>
-            Office Mandate
+            About this listing
           </p>
           <Card variant='default' hover={false} className='bg-kapwa-bg-surface'>
             <CardContent className='p-6'>
               <p className='text-kapwa-text-support text-sm leading-relaxed'>
-                The {toTitleCase(dept.office_name)} is a frontline office of the
-                {lguLabels.fullName}. It is responsible for executing
-                administrative mandates and technical functions to ensure the
-                delivery of high-quality public services within the Science and
-                Nature City.
+                This page shows the contact details published for the{' '}
+                {toTitleCase(dept.office_name)}. Its functions and services will
+                be added once they have been confirmed.
               </p>
             </CardContent>
           </Card>

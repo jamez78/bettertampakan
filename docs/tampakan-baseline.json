@@ -69,6 +69,11 @@
       "title": "LGU Facebook post congratulating newly appointed and promoted employees, 19 Oct 2026",
       "url": "https://www.facebook.com/p/Municipal-Government-of-Tampakan-100069061335217/",
       "type": "primary"
+    },
+    "tampakan_cc_fb": {
+      "title": "Tampakan Community College, official Facebook page (contact info and faculty announcement cards, read 31 Oct 2026)",
+      "url": "https://www.facebook.com/tampakancommunitycollege",
+      "type": "primary"
     }
   },
   "profile": {
@@ -919,6 +924,37 @@
         "value": ["0967-043-0803", "(083) 227-1008", "(083) 553-7180"],
         "sources": ["lgu_hotlines_card"],
         "status": "confirmed"
+      }
+    },
+    {
+      "office": "Tampakan Community College",
+      "address": {
+        "value": "Purok Mainuswagon, Brgy. Poblacion, Tampakan, South Cotabato",
+        "sources": ["tampakan_cc_fb"],
+        "status": "confirmed"
+      },
+      "email": {
+        "value": "tampakancommunitycollege2026@gmail.com",
+        "sources": ["tampakan_cc_fb"],
+        "status": "confirmed"
+      },
+      "website": {
+        "value": "https://www.facebook.com/tampakancommunitycollege",
+        "sources": ["tampakan_cc_fb"],
+        "status": "confirmed",
+        "note": "The college publishes through this Facebook page."
+      },
+      "head": {
+        "value": "Giovanni A. Montejo, LPT, PhD, EdD (College Administrator)",
+        "sources": ["tampakan_cc_fb"],
+        "status": "confirmed",
+        "note": "Named on the college's own faculty announcement card. Other faculty and staff on the cards are deliberately not listed."
+      },
+      "relationship_to_lgu": {
+        "value": null,
+        "sources": [],
+        "status": "needs_confirmation",
+        "note": "Not stated on the college page. Confirm whether the college is run by the Municipal Government before describing it as an LGU office."
       }
     }
   ]
