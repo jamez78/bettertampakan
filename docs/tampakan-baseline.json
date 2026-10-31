@@ -74,6 +74,11 @@
       "title": "Tampakan Community College, official Facebook page (contact info and faculty announcement cards, read 31 Oct 2026)",
       "url": "https://www.facebook.com/tampakancommunitycollege",
       "type": "primary"
+    },
+    "tampakan_tourism_fb": {
+      "title": "Tampakan Municipal Tourism Office, South Cotabato, Facebook page (describes itself as the official page of LGU Tampakan Tourism; read 31 Oct 2026)",
+      "url": "https://www.facebook.com/profile.php?id=100088410064330",
+      "type": "primary"
     }
   },
   "profile": {
@@ -1014,6 +1019,37 @@
         "sources": ["tampakan_cc_fb"],
         "status": "confirmed",
         "note": "Names, credentials and positions as printed on the college's faculty announcement cards (read 31 Oct 2026). Education history and photos on the cards are deliberately not reproduced. The cards may not cover every staff member."
+      }
+    },
+    {
+      "office": "Municipal Tourism Office",
+      "address": {
+        "value": "Poblacion, Tampakan, South Cotabato",
+        "sources": ["tampakan_tourism_fb"],
+        "status": "confirmed"
+      },
+      "numbers": {
+        "value": ["0946-479-8421"],
+        "sources": ["tampakan_tourism_fb"],
+        "status": "confirmed",
+        "note": "Shown on the page as +63 946 479 8421."
+      },
+      "email": {
+        "value": "tampakantourism@gmail.com",
+        "sources": ["tampakan_tourism_fb"],
+        "status": "confirmed"
+      },
+      "website": {
+        "value": "https://www.facebook.com/profile.php?id=100088410064330",
+        "sources": ["tampakan_tourism_fb"],
+        "status": "confirmed",
+        "note": "The office publishes through this Facebook page, whose bio reads 'Official Facebook Page of LGU Tampakan Tourism'."
+      },
+      "head": {
+        "value": null,
+        "sources": [],
+        "status": "needs_confirmation",
+        "note": "No head named on the page. Ask the Municipal Tourism Office."
       }
     }
   ]

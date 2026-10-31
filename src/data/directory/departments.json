@@ -97,5 +97,14 @@
         "role": "Part-Time Instructor"
       }
     ]
+  },
+  {
+    "slug": "municipal-tourism-office",
+    "office_name": "Municipal Tourism Office",
+    "address": "Poblacion",
+    "trunkline": ["0946-479-8421"],
+    "website": "https://www.facebook.com/profile.php?id=100088410064330",
+    "email": "tampakantourism@gmail.com",
+    "department_head": null
   }
 ]
