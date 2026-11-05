@@ -24,6 +24,7 @@ export const mainNavigation: NavigationItem[] = [
       { label: 'Elected Officials', href: '/government/elected-officials' },
       { label: 'Departments', href: '/government/departments' },
       { label: 'Barangays', href: '/government/barangays' },
+      { label: 'Executive Orders', href: '/government/executive-orders' },
     ],
   },
   {
