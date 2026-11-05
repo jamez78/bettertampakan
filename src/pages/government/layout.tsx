@@ -1,6 +1,12 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
-import { Building2Icon, ChevronRight, HomeIcon, UsersIcon } from 'lucide-react';
+import {
+  Building2Icon,
+  ChevronRight,
+  HomeIcon,
+  ScrollTextIcon,
+  UsersIcon,
+} from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 import { PageHeader, SectionBlock } from '@/components/layout';
@@ -44,6 +50,16 @@ export default function GovernmentRootLayout() {
       path: '/government/barangays',
       category: 'Local Units',
     },
+    {
+      title: t('government.executiveOrdersTitle', 'Executive Orders'),
+      description: t(
+        'government.executiveOrdersDescription',
+        'Orders issued by the Municipal Mayor, summarised in plain language.'
+      ),
+      icon: ScrollTextIcon,
+      path: '/government/executive-orders',
+      category: 'Issuances',
+    },
   ];
 
   return (
@@ -52,11 +68,11 @@ export default function GovernmentRootLayout() {
       <PageHeader
         variant='centered'
         title='Government'
-        description={`Access information on elected leaders, ${lguLabels.adjective.toLowerCase()} departments, and the 14 component barangays of ${lguLabels.name}.`}
+        description={`Access information on elected leaders, ${lguLabels.adjective.toLowerCase()} departments, executive orders and the 14 component barangays of ${lguLabels.name}.`}
       />
 
       <SectionBlock className='pb-kapwa-xs md:pb-kapwa-sm'>
-        <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
+        <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4'>
           {branches.map(branch => {
             const isActive = currentPath.includes(branch.path);
             const Icon = branch.icon;

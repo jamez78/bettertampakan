@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "eo-40-s-2026",
+    "number": "40",
+    "series": 2026,
+    "title": "An order establishing a regulatory floor price for hog liveweights within the territorial jurisdiction of Tampakan, South Cotabato, providing safeguards against predatory buying practices, deregulating inter-municipal commerce, institutionalizing the Bantay ASF Program protocols, and creating the Municipal Swine Trade Oversight Task Force.",
+    "short_title": "Floor price for hog liveweights and Bantay ASF protocols",
+    "signed": "2026-11-04",
+    "effectivity": "Immediately upon signing, until terminated or lifted.",
+    "signatory": {
+      "name": "Leonard T. Escobillo, RN",
+      "title": "Municipal Mayor"
+    },
+    "source": {
+      "url": null,
+      "label": "Municipality of Tampakan, Facebook page"
+    },
+    "summary_fil": "Ang Executive Order No. 40, s. 2026 ay nagtatakda ng pinakamababang presyo (floor price) para sa hog liveweight na ibinibili sa loob ng Tampakan. Bawal bumili nang mas mababa sa presyong ito ang sinumang trader, middleman, buyer o commercial agent sa loob ng bayan. Malaya pa ring magbenta ang mga raiser sa labas ng Tampakan at malayang kumuha ng baboy ang mga mamimili mula sa ibang bayan, basta't sinusunod ang mga patakaran sa kuwarentenas at biosecurity. Kasama rin sa kautusan ang mga protocol ng Bantay ASF Program at ang paglikha ng Municipal Swine Trade Oversight Task Force. Nilagdaan ito noong Nobyembre 4, 2026 at agad na may bisa hanggang ito ay wakasan o bawiin.",
+    "tables": [
+      {
+        "title": "Minimum floor price (Section 2.1)",
+        "note": "Applies to liveweight swine transactions, purchases and trades within Tampakan.",
+        "columns": ["Swine classification", "Minimum price"],
+        "rows": [
+          [
+            "Backyard Raised Hogs (Standard / Good Quality)",
+            "₱160.00 per kilogram"
+          ],
+          ["Culled Sows / Boars", "₱100.00 per kilogram"],
+          ["Piglets", "₱3,500.00 to ₱4,000.00 per head"],
+          ["Lechon Size (30 kg and below)", "₱210.00 per kilogram"],
+          ["Lechon Size (31 kg up to 60 kg)", "₱200.00 per kilogram"]
+        ]
+      }
+    ],
+    "key_points": [
+      {
+        "heading": "Floor price (Sections 2 and 9)",
+        "points": [
+          "No livestock trader, middleman, buyer or commercial agent buying within Tampakan may buy hog liveweights below the floor price.",
+          "The Municipal Swine Trade Oversight Task Force reviews the floor price every two weeks or monthly. Any change to the price schedule is issued in writing as a Supplemental Executive Order approved by the Municipal Mayor on the Task Force's recommendation."
+        ]
+      },
+      {
+        "heading": "Free commerce (Section 3)",
+        "points": [
+          "Local hog raisers may sell their liveweight swine to buyers, abattoirs or processors outside Tampakan, subject to the usual veterinary health clearances, shipping permits and ASF biosecurity protocols.",
+          "Local buyers, meat vendors and butchers may buy pork or liveweight swine from other municipalities, provided that everything brought into Tampakan follows national veterinary quarantine rules, NMIS inspection standards and local biosecurity protocols."
+        ]
+      },
+      {
+        "heading": "Weighing, trader clearance and purchase slips (Section 4)",
+        "points": [
+          "Liveweight purchases in Tampakan must be weighed on official, calibrated, seal-inspected scales accredited by the Municipal Treasurer's Office.",
+          "Livestock traders and buyers need a Municipal Livestock Trader's Clearance from the Office of the Municipal Agriculturist and must issue purchase slips showing the actual weight and the price per kilogram."
+        ]
+      },
+      {
+        "heading": "Bantay ASF Program and biosecurity (Section 5)",
+        "points": [
+          "Live swine, pork carcasses and pork products entering or moving through Tampakan must be presented at designated checkpoints with a valid Veterinary Health Certificate and a valid Livestock/Meat Shipping Permit from the Bureau of Animal Industry (BAI).",
+          "Live hogs coming from outside the municipality also need an ASF-negative test result from a DOH/DA-accredited laboratory.",
+          "Feeding unheated food scraps or swill (lamaw) to swine is prohibited in all barangays.",
+          "If an active or confirmed ASF case is detected in Tampakan, the DA-BAI 1-7-10 Kilometer Protocol (or the prevailing national colour-coded zoning framework) applies. Liveweight sales from verified ASF-free \"Green Zones\" within Tampakan stay protected under the floor price if the sellers have valid veterinary health certificates."
+        ]
+      },
+      {
+        "heading": "Municipal Swine Trade Oversight Task Force (Section 6)",
+        "points": [
+          "Chaired by the Municipal Mayor and vice-chaired by the Municipal Agriculturist.",
+          "Members: the Sangguniang Bayan committee chairpersons on Agriculture and on Economic Enterprise; the Municipal Treasurer; the Municipal Environment and Natural Resources Officer; the Municipal Information Officer; the Chief of Police of the Tampakan Municipal Police Station; the President of the Liga ng mga Barangay; a representative of the recognized Hog Raisers Association; and a representative of Tampakan Meat Vendors."
+        ]
+      }
+    ]
+  }
+]

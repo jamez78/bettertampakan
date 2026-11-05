@@ -62,6 +62,12 @@ const BarangaysIndex = lazy(() => import('@/pages/government/barangays'));
 const BarangayDetail = lazy(
   () => import('@/pages/government/barangays/[barangay]')
 );
+const ExecutiveOrdersIndex = lazy(
+  () => import('@/pages/government/executive-orders')
+);
+const ExecutiveOrderDetail = lazy(
+  () => import('@/pages/government/executive-orders/[order]')
+);
 
 // Statistics Dashboard
 const StatisticsLayout = lazy(() => import('@/pages/statistics/layout'));
@@ -214,6 +220,12 @@ function AppContent() {
               <Route path='barangays' element={<BarangaysLayout />}>
                 <Route index element={<BarangaysIndex />} />
                 <Route path=':barangay' element={<BarangayDetail />} />
+              </Route>
+
+              {/* 4. Executive Orders */}
+              <Route path='executive-orders'>
+                <Route index element={<ExecutiveOrdersIndex />} />
+                <Route path=':order' element={<ExecutiveOrderDetail />} />
               </Route>
             </Route>
 

@@ -89,6 +89,12 @@
       "title": "PNP Tampakan Municipal Police Station, Facebook page (cover banner shows hotline 0928-451-1059; page category 'Digital creator' and bio says it is for community information, so it is not described as official by the page itself; read 31 Oct 2026)",
       "url": "https://www.facebook.com/profile.php?id=100083823576856",
       "type": "primary, official status unverified"
+    },
+    "lgu_fb_eo40": {
+      "title": "Municipality of Tampakan official Facebook page: post of Executive Order No. 40, series of 2026, and the signed order (read 4 Nov 2026)",
+      "url": null,
+      "type": "primary",
+      "note": "The post link has not been recorded yet. Add it here and in src/data/directory/executive-orders.json (source.url)."
     }
   },
   "profile": {
@@ -1089,6 +1095,59 @@
         "sources": ["dot_community_guides", "tampakan_tourism_fb"],
         "status": "needs_confirmation",
         "note": "Names exactly as listed on the graphic; the Municipal Tourism Office's 29 June post announces the first batch of DOT-accredited guides. The graphic's date and original post are not recorded, so check the current accreditation list with the Tourism Office. No contact details are published for individual guides; bookings go through the guides' association."
+      }
+    }
+  ],
+  "executive_orders": [
+    {
+      "order": "Executive Order No. 40, Series of 2026",
+      "signed": {
+        "value": "2026-11-04",
+        "sources": ["lgu_fb_eo40"],
+        "status": "confirmed"
+      },
+      "signatory": {
+        "value": "Leonard T. Escobillo, RN, Municipal Mayor",
+        "sources": ["lgu_fb_eo40"],
+        "status": "confirmed"
+      },
+      "effectivity": {
+        "value": "Immediately upon signing, until terminated or lifted.",
+        "sources": ["lgu_fb_eo40"],
+        "status": "confirmed"
+      },
+      "floor_prices": {
+        "value": [
+          {
+            "category": "Backyard Raised Hogs (Standard / Good Quality)",
+            "minimum": "₱160.00 per kilogram"
+          },
+          {
+            "category": "Culled Sows / Boars",
+            "minimum": "₱100.00 per kilogram"
+          },
+          {
+            "category": "Piglets",
+            "minimum": "₱3,500.00 to ₱4,000.00 per head"
+          },
+          {
+            "category": "Lechon Size (30 kg and below)",
+            "minimum": "₱210.00 per kilogram"
+          },
+          {
+            "category": "Lechon Size (31 kg up to 60 kg)",
+            "minimum": "₱200.00 per kilogram"
+          }
+        ],
+        "sources": ["lgu_fb_eo40"],
+        "status": "confirmed",
+        "note": "Section 2.1, minimum liveweight prices for transactions within Tampakan. Prices change only by a Supplemental Executive Order (Section 9)."
+      },
+      "presentation": {
+        "value": "Plain-language summary on /government/executive-orders; the signed order is the official copy.",
+        "sources": [],
+        "status": "confirmed",
+        "note": "Screenshots, the signature and the full legal text are deliberately not reproduced. The Filipino summary was written from the order itself, not from the LGU's Facebook caption."
       }
     }
   ]

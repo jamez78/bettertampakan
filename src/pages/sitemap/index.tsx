@@ -80,6 +80,12 @@ const SitemapPage: FC = () => {
           url: '/government/barangays',
           description: `The barangays of ${config.lgu.name}`,
         },
+        {
+          title: 'Executive Orders',
+          url: '/government/executive-orders',
+          description:
+            'Orders issued by the Municipal Mayor, in plain language',
+        },
       ],
     },
     {

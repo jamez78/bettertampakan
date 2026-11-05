@@ -39,6 +39,7 @@ const notYetAvailable = [
   'Competitiveness scores and municipal income figures.',
   'Financial reports and procurement records.',
   'Ordinances and resolutions.',
+  'Executive orders: only Executive Order No. 40, series of 2026 is listed so far, as a plain-language summary and not the legal text. This is not a complete list.',
   'Local history.',
   'Weather.',
 ];
