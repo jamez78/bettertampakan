@@ -91,10 +91,9 @@
       "type": "primary, official status unverified"
     },
     "lgu_fb_eo40": {
-      "title": "Municipality of Tampakan official Facebook page: post of Executive Order No. 40, series of 2026, and the signed order (read 4 Nov 2026)",
-      "url": null,
-      "type": "primary",
-      "note": "The post link has not been recorded yet. Add it here and in src/data/directory/executive-orders.json (source.url)."
+      "title": "Municipality of Tampakan official Facebook page: post of Executive Order No. 40, series of 2026 (4 Nov 2026, 11:22 AM), and the signed order (read 4-5 Nov 2026)",
+      "url": "https://www.facebook.com/share/p/19ijU6rosv/",
+      "type": "primary"
     }
   },
   "profile": {
@@ -1147,7 +1146,7 @@
         "value": "Plain-language summary on /government/executive-orders; the signed order is the official copy.",
         "sources": [],
         "status": "confirmed",
-        "note": "Screenshots, the signature and the full legal text are deliberately not reproduced. The Filipino summary was written from the order itself, not from the LGU's Facebook caption."
+        "note": "Screenshots, the signature and the full legal text are deliberately not reproduced. The Filipino summary follows the wording of the LGU's Facebook post caption. The caption lists the same five minimum prices as the signed order and says the Task Force reviews the price every two weeks or monthly."
       }
     }
   ]
