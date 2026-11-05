@@ -92,9 +92,8 @@
     },
     "lgu_fb_eo40": {
       "title": "Municipality of Tampakan official Facebook page: post of Executive Order No. 40, series of 2026, and the signed order (read 4 Nov 2026)",
-      "url": null,
-      "type": "primary",
-      "note": "The post link has not been recorded yet. Add it here and in src/data/directory/executive-orders.json (source.url)."
+      "url": "https://www.facebook.com/share/p/19ijU6rosv/",
+      "type": "primary"
     }
   },
   "profile": {
